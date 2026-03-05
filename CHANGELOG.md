@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/tonyputi/resume/compare/v1.1.2...v1.1.3) (2026-03-05)
+
+
+### Bug Fixes
+
+* restore Crypto/Blockchain in domains as background competency ([803682c](https://github.com/tonyputi/resume/commit/803682cf21096fa5973e4419d2e0e95e599bbf17))
+
 ## [1.1.2](https://github.com/tonyputi/resume/compare/v1.1.1...v1.1.2) (2026-03-05)
 
 
