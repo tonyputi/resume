@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Filippo Sallemi",
-    "label": "Technology Leader & Engineering Architect · iGaming & Web3",
+    "label": "Technology Leader & Engineering Architect · iGaming",
     "email": "filippo@sallemi.it",
     "phone": "+35679248232",
     "url": "https://filippo.sallemi.it",
@@ -54,7 +54,7 @@
       "endDate": "2022-05",
       "location": "Malta",
       "highlights": [
-        "Regulatory Rescue: Independently unblocked the Italian market ADM/AAMS certification that had been stalled for nearly a year — delivered full compliance and license within 3 months.",
+        "Resolved a critical technical impasse that had stalled ADM/AAMS certification for nearly a year, securing the Italian license within 3 months through a ruthless audit and refactoring of compliance protocols.",
         "Optimised high-volume transactional backend in PHP/Laravel handling massive real-time gaming traffic with focus on data integrity and security."
       ]
     },
@@ -68,6 +68,7 @@
       "highlights": [
         "Scaled engineering org from early-stage to 10+ members; reported to CTO; co-defined technical roadmap and organizational structure.",
         "Casino Aggregator from zero: Integrated 40+ third-party game providers with sub-second latency and high availability under massive transactional load.",
+        "Spearheaded the successful migration of a legacy 'spaghetti-code' platform into a modern, scalable architecture within a few months. Managed the full transition of technical debt into a high-performance system while maintaining service continuity.",
         "Managed multi-jurisdiction compliance (MGA, UKGC, Italy, Colombia) — 100% regulatory alignment across all markets."
       ]
     },
@@ -135,14 +136,14 @@
   ],
   "projects": [
     {
-      "name": "Crypto Payment Gateway",
-      "description": "Designed and built a direct blockchain payment infrastructure — automated hot/cold wallet management, real-time transaction verification via Webhooks, direct on-chain processing with no third-party dependency. Validated zero-commission payment model as feasible for iGaming platforms.",
-      "keywords": ["PHP/Laravel", "Go", "Python", "PostgreSQL"]
-    },
-    {
       "name": "AI-Enhanced iGaming Aggregator",
       "description": "Deployed custom MCP servers connecting a casino aggregator's data layer to LLMs — enabling natural-language querying of betting patterns and automated GGR reports. Implemented autonomous risk analysis without manual SQL overhead.",
       "keywords": ["PHP/Laravel", "Go", "Redis", "PostgreSQL", "Python"]
+    },
+    {
+      "name": "Crypto Payment Gateway",
+      "description": "Designed and built a direct blockchain payment infrastructure — automated hot/cold wallet management, real-time transaction verification via Webhooks, direct on-chain processing with no third-party dependency. Validated zero-commission payment model as feasible for iGaming platforms.",
+      "keywords": ["PHP/Laravel", "Go", "Python", "PostgreSQL"]
     }
   ],
   "skills": [
