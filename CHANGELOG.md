@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/tonyputi/resume/compare/v1.2.3...v1.2.4) (2026-03-05)
+
+
+### Bug Fixes
+
+* use CSS grid in PDF generation to maintain column alignment across pages, add MySQL to AI aggregator ([67bc714](https://github.com/tonyputi/resume/commit/67bc714c700f13ff4a3cb21faf190078dd2f9528))
+
 ## [1.2.3](https://github.com/tonyputi/resume/compare/v1.2.2...v1.2.3) (2026-03-05)
 
 
