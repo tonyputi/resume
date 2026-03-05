@@ -1,18 +1,13 @@
 {
-  "name": "private",
+  "name": "resume",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx resumed render resume.json --theme jsonresume-theme-macchiato -o index.html",
+    "dev": "npm run build && open index.html"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
   "dependencies": {
-    "jsonresume-theme-even": "^0.26.1",
     "jsonresume-theme-macchiato": "^1.1.0",
-    "jsonresume-theme-stackoverflow": "^3.1.1",
     "resumed": "^6.1.0"
   }
 }
