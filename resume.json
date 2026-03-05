@@ -142,7 +142,7 @@
     },
     {
       "name": "Crypto Payment Gateway",
-      "description": "Designed and built a direct blockchain payment infrastructure — automated hot/cold wallet management, real-time transaction verification via Webhooks, direct on-chain processing with no third-party dependency. Validated zero-commission payment model as feasible for iGaming platforms.",
+      "description": "Built a self-hosted Monero payment infrastructure using a local full node — implemented subaddress-based wallet management for per-transaction isolation, real-time payment verification via Monero RPC, and full transaction lifecycle handling with no third-party payment provider.",
       "keywords": ["PHP/Laravel", "Go", "Python", "PostgreSQL"]
     }
   ],

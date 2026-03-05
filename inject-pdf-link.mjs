@@ -36,7 +36,8 @@ const button = `
 </a>
 `
 
-const html = readFileSync('index.html', 'utf8')
-const injected = html.replace('</body>', `${button}</body>`)
-writeFileSync('index.html', injected)
+let html = readFileSync('index.html', 'utf8')
+html = html.replace('Open Source Projects', 'Private Projects')
+html = html.replace('</body>', `${button}</body>`)
+writeFileSync('index.html', html)
 console.log('PDF link injected.')
