@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/tonyputi/resume/compare/v1.1.3...v1.2.0) (2026-03-05)
+
+
+### Features
+
+* add startup and legacy rescue context to summary ([d7f4490](https://github.com/tonyputi/resume/commit/d7f4490a30576c662bda43c4141d7449507af702))
+
 ## [1.1.3](https://github.com/tonyputi/resume/compare/v1.1.2...v1.1.3) (2026-03-05)
 
 
