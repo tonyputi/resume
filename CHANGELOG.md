@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/tonyputi/resume/compare/v1.1.1...v1.1.2) (2026-03-05)
+
+
+### Bug Fixes
+
+* update headline to iGaming & Affiliates, remove Crypto/Blockchain from domains ([9b4d526](https://github.com/tonyputi/resume/commit/9b4d5268a9b7775621cbc59d611b847b583788b6))
+
 ## [1.1.1](https://github.com/tonyputi/resume/compare/v1.1.0...v1.1.1) (2026-03-05)
 
 
