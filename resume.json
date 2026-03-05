@@ -137,7 +137,7 @@
   "projects": [
     {
       "name": "AI-Enhanced iGaming Aggregator",
-      "description": "Deployed custom MCP servers connecting a casino aggregator's data layer to LLMs — enabling natural-language querying of betting patterns and automated GGR reports. Implemented autonomous risk analysis without manual SQL overhead.",
+      "description": "Designed and built a full casino aggregator using a microservices architecture, complete with a back-office platform enriched with AI capabilities. Integrated a custom MCP server to connect the aggregator's data layer to LLMs — enabling natural-language querying of GGR reports, automated risk management, and autonomous business intelligence without manual SQL overhead.",
       "keywords": ["PHP/Laravel", "Go", "Redis", "PostgreSQL", "Python"]
     },
     {
