@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/tonyputi/resume/compare/v1.0.1...v1.1.0) (2026-03-05)
+
+
+### Features
+
+* add download PDF button with SVG icon matching theme color ([b3d1664](https://github.com/tonyputi/resume/commit/b3d16646d08d56c8b9bc670320e7ab530ecab4c1))
+
 ## [1.0.1](https://github.com/tonyputi/resume/compare/v1.0.0...v1.0.1) (2026-03-05)
 
 
