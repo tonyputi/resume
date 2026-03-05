@@ -31,7 +31,7 @@ jobs:
       - name: Generate PDF
         run: |
           google-chrome-stable --headless --no-sandbox --disable-gpu \
-            --print-to-pdf=Filippo_Sallemi_CV.pdf \
+            --print-to-pdf=filippo-sallemi-resume.pdf \
             --print-to-pdf-no-header \
             file://${{ github.workspace }}/index.html
 

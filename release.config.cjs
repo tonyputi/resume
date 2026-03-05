@@ -9,8 +9,8 @@ module.exports = {
       {
         assets: [
           {
-            path: 'Filippo_Sallemi_CV.pdf',
-            label: 'Filippo Sallemi — CV (PDF)',
+            path: 'filippo-sallemi-resume.pdf',
+            label: 'Filippo Sallemi — Resume (PDF)',
           },
         ],
       },
