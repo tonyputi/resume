@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Filippo Sallemi",
-    "label": "Technology Leader & Engineering Architect · iGaming",
+    "label": "Technology Leader & Engineering Architect · iGaming & Affiliates",
     "email": "filippo@sallemi.it",
     "phone": "+35679248232",
     "url": "https://filippo.sallemi.it",
@@ -165,7 +165,7 @@
     },
     {
       "name": "Domains",
-      "keywords": ["iGaming", "Affiliate Systems", "Real-time Processing", "Crypto/Blockchain"]
+      "keywords": ["iGaming", "Affiliate Systems", "Real-time Processing"]
     }
   ],
   "languages": [
