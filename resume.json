@@ -1,0 +1,174 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Filippo Sallemi",
+    "label": "Technology Leader & Engineering Architect · iGaming & Web3",
+    "email": "filippo@sallemi.it",
+    "phone": "+35679248232",
+    "url": "https://filippo.sallemi.it",
+    "location": {
+      "city": "Gharghur",
+      "countryCode": "MT",
+      "region": "Malta"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "filippo-sallemi",
+        "url": "https://linkedin.com/in/filippo-sallemi"
+      }
+    ],
+    "summary": "Deeply technical engineering leader with 15+ years of experience across iGaming and Fintech sectors. Proven track record in scaling engineering organizations and driving technical transformations within fast-paced environments. Expert in cloud infrastructure optimization (19% cost reduction) and automating delivery pipelines (from days to hours using AWS Fargate/ECS). Certified Scrum Master with a strategic focus on AI-driven efficiency — still the person who opens the IDE when it matters."
+  },
+  "work": [
+    {
+      "name": "Gambling.com Group",
+      "position": "Technical Architect",
+      "startDate": "2025-01",
+      "endDate": "",
+      "location": "Malta",
+      "highlights": [
+        "AI Strategy & Governance: Appointed to an elite leadership task force driving the company's transition toward an Agentic-Centric organizational structure.",
+        "AI Democratization & Security: Engineered and standardized a secure framework enabling decentralized AI tool creation across the organization — implementing Model Context Protocol (MCP) servers for safe integration of custom AI agents.",
+        "19% infrastructure cost reduction through strategic FinOps and cloud workload optimization in the first year.",
+        "Delivery Acceleration: Reduced environment provisioning from days to hours by architecting automated pipelines using AWS Fargate/ECS.",
+        "Established org-wide architectural standards, IaC (Terraform) adoption, and CI/CD best practices across all engineering teams."
+      ]
+    },
+    {
+      "name": "Gambling.com Group",
+      "position": "Development Leader",
+      "startDate": "2022-05",
+      "endDate": "2025-01",
+      "location": "Malta",
+      "highlights": [
+        "Built and managed a cross-functional team of 6 (devs + QA); defined quarterly OKRs and delivery roadmaps aligned with business goals.",
+        "Platform Modernisation: Led the full upgrade of the company's core software, reducing codebase by 2/3 — delivered on schedule with zero downtime.",
+        "Multiple internal hackathon wins; drove cross-team technical solutions and collaborated with DevOps on performance tuning and infrastructure improvements."
+      ]
+    },
+    {
+      "name": "Videoslots",
+      "position": "Senior Full Stack Developer",
+      "startDate": "2021-01",
+      "endDate": "2022-05",
+      "location": "Malta",
+      "highlights": [
+        "Regulatory Rescue: Independently unblocked the Italian market ADM/AAMS certification that had been stalled for nearly a year — delivered full compliance and license within 3 months.",
+        "Optimised high-volume transactional backend in PHP/Laravel handling massive real-time gaming traffic with focus on data integrity and security."
+      ]
+    },
+    {
+      "name": "The Ear Limited",
+      "position": "Head of Development",
+      "startDate": "2017-03",
+      "endDate": "2020-05",
+      "location": "Malta",
+      "summary": "iGaming Startup",
+      "highlights": [
+        "Scaled engineering org from early-stage to 10+ members; reported to CTO; co-defined technical roadmap and organizational structure.",
+        "Casino Aggregator from zero: Integrated 40+ third-party game providers with sub-second latency and high availability under massive transactional load.",
+        "Managed multi-jurisdiction compliance (MGA, UKGC, Italy, Colombia) — 100% regulatory alignment across all markets."
+      ]
+    },
+    {
+      "name": "Nomad NT",
+      "position": "Founder & CEO",
+      "startDate": "2011-01",
+      "endDate": "2017-12",
+      "location": "Malta",
+      "highlights": [
+        "Founded and ran a technology company for 7 years — full P&L ownership, client acquisition, and end-to-end technical delivery for government and private-sector clients.",
+        "Delivered Laravel web platforms, Linux infrastructure, network security systems, and embedded automation projects (maritime/yachts)."
+      ]
+    },
+    {
+      "name": "Voismart SRL",
+      "position": "Senior Full Stack Developer",
+      "startDate": "2007-01",
+      "endDate": "2010-12",
+      "location": "Milan, Italy",
+      "highlights": [
+        "Led a team of 6 developers building the web UI for a VoIP/PBX product; worked extensively with Asterisk, SIP protocol and advanced networking."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Università degli Studi di Milano-Bicocca",
+      "area": "Computer Science",
+      "studyType": "BSc",
+      "startDate": "2001-01",
+      "endDate": "2004-01",
+      "location": "Milan, Italy"
+    },
+    {
+      "institution": "I.T.I.S.",
+      "area": "Electronic Engineering",
+      "studyType": "Qualification",
+      "startDate": "1995-01",
+      "endDate": "2000-01",
+      "location": "Ragusa, Italy"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certified Scrum Master (CSM)",
+      "date": "2021",
+      "issuer": "Scrum Alliance"
+    },
+    {
+      "name": "Machine Learning with Python",
+      "date": "2022",
+      "issuer": "LinkedIn Learning"
+    },
+    {
+      "name": "Microservices Expert",
+      "date": "2021",
+      "issuer": "Udemy"
+    },
+    {
+      "name": "Engineering Leadership Suite",
+      "date": "2023",
+      "issuer": "LinkedIn Learning"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Crypto Payment Gateway",
+      "description": "Designed and built a direct blockchain payment infrastructure — automated hot/cold wallet management, real-time transaction verification via Webhooks, direct on-chain processing with no third-party dependency. Validated zero-commission payment model as feasible for iGaming platforms.",
+      "keywords": ["PHP/Laravel", "Go", "Python", "PostgreSQL"]
+    },
+    {
+      "name": "AI-Enhanced iGaming Aggregator",
+      "description": "Deployed custom MCP servers connecting a casino aggregator's data layer to LLMs — enabling natural-language querying of betting patterns and automated GGR reports. Implemented autonomous risk analysis without manual SQL overhead.",
+      "keywords": ["PHP/Laravel", "Go", "Redis", "PostgreSQL", "Python"]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Backend",
+      "keywords": ["PHP", "Laravel", "Node.js", "Python", "Go"]
+    },
+    {
+      "name": "Frontend",
+      "keywords": ["Vue.js", "JavaScript", "Tailwind CSS", "Livewire"]
+    },
+    {
+      "name": "Infrastructure",
+      "keywords": ["AWS", "Fargate", "ECS", "Lambda", "Docker", "Terraform", "CI/CD"]
+    },
+    {
+      "name": "Databases",
+      "keywords": ["MySQL", "PostgreSQL", "Redis", "Elasticsearch"]
+    },
+    {
+      "name": "Domains",
+      "keywords": ["iGaming", "Affiliate Systems", "Real-time Processing", "Crypto/Blockchain"]
+    }
+  ],
+  "languages": [
+    { "language": "Italian", "fluency": "Native" },
+    { "language": "English", "fluency": "Professional" }
+  ]
+}
