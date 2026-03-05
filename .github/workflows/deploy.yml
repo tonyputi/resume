@@ -81,7 +81,7 @@ jobs:
         if: needs.release.outputs.tag != ''
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload ${{ needs.release.outputs.tag }} filippo-sallemi-resume.pdf --clobber
+        run: gh release upload ${{ needs.release.outputs.tag }} resume.pdf --clobber
 
   deploy:
     name: Deploy
