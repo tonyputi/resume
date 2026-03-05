@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/tonyputi/resume/compare/v1.0.0...v1.0.1) (2026-03-05)
+
+
+### Bug Fixes
+
+* use puppeteer with --no-sandbox for PDF generation, rename to resume.pdf ([2443534](https://github.com/tonyputi/resume/commit/24435347bea24fd7acb6e3771842de93ce3c235e))
+
 # 1.0.0 (2026-03-05)
 
 
