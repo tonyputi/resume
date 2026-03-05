@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/tonyputi/resume/compare/v1.1.0...v1.1.1) (2026-03-05)
+
+
+### Bug Fixes
+
+* remove Web3 from headline, reorder projects, strengthen Videoslots and Ear Limited highlights ([10ab189](https://github.com/tonyputi/resume/commit/10ab189bede281a41cd4f1b1aabd6dcd915ba895))
+
 # [1.1.0](https://github.com/tonyputi/resume/compare/v1.0.1...v1.1.0) (2026-03-05)
 
 
