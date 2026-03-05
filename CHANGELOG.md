@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/tonyputi/resume/compare/v1.2.4...v1.2.5) (2026-03-05)
+
+
+### Bug Fixes
+
+* update AI aggregator keywords, add Ansible and GitHub Actions to infrastructure skills ([ea9e6e5](https://github.com/tonyputi/resume/commit/ea9e6e584bfad2cf97b4210f69c7dbe5a447662a))
+
 ## [1.2.4](https://github.com/tonyputi/resume/compare/v1.2.3...v1.2.4) (2026-03-05)
 
 
