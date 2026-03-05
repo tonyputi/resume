@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/tonyputi/resume/compare/v1.2.0...v1.2.1) (2026-03-05)
+
+
+### Bug Fixes
+
+* replace Fintech with Affiliates, rephrase hands-on closing line ([6c4ccd6](https://github.com/tonyputi/resume/commit/6c4ccd613ab9cd604714005106093cf3924feea1))
+
 # [1.2.0](https://github.com/tonyputi/resume/compare/v1.1.3...v1.2.0) (2026-03-05)
 
 
