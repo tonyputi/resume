@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/tonyputi/resume/compare/v1.2.5...v1.2.6) (2026-03-05)
+
+
+### Bug Fixes
+
+* use company field instead of name for work entries to match theme schema ([7875f61](https://github.com/tonyputi/resume/commit/7875f6132fef2f868a47d5de8cb317fcc7c4ecee))
+
 ## [1.2.5](https://github.com/tonyputi/resume/compare/v1.2.4...v1.2.5) (2026-03-05)
 
 
