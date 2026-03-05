@@ -5,8 +5,45 @@ on:
     branches: [main]
 
 jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    outputs:
+      version: ${{ steps.release.outputs.gitTag }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build HTML
+        run: npm run build
+
+      - name: Generate PDF
+        run: |
+          google-chrome-stable --headless --no-sandbox --disable-gpu \
+            --print-to-pdf=Filippo_Sallemi_CV.pdf \
+            --print-to-pdf-no-header \
+            file://${{ github.workspace }}/index.html
+
+      - name: Release
+        id: release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
+
   deploy:
     runs-on: ubuntu-latest
+    needs: release
     permissions:
       contents: read
       pages: write
@@ -24,7 +61,8 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run build
+      - name: Build HTML
+        run: npm run build
 
       - uses: actions/configure-pages@v4
 
