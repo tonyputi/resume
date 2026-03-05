@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "1.0.0",
   "scripts": {
-    "build": "npx resumed render resume.json --theme jsonresume-theme-macchiato -o index.html",
+    "build": "npx resumed render resume.json --theme jsonresume-theme-macchiato -o index.html && node inject-pdf-link.mjs",
     "pdf": "node generate-pdf.mjs",
     "dev": "npm run build && open index.html"
   },
