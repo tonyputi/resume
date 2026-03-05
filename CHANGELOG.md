@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/tonyputi/resume/compare/v1.2.1...v1.2.2) (2026-03-05)
+
+
+### Bug Fixes
+
+* rename Open Source Projects to Private Projects, update Monero payment description ([e45e335](https://github.com/tonyputi/resume/commit/e45e3353e8e908edeea5a20c0b83f8093c23e3e5))
+
 ## [1.2.1](https://github.com/tonyputi/resume/compare/v1.2.0...v1.2.1) (2026-03-05)
 
 
