@@ -6,18 +6,53 @@ on:
 
 jobs:
   release:
-    name: Release & Build
+    name: Release
     runs-on: ubuntu-latest
     permissions:
       contents: write
       issues: write
       pull-requests: write
     outputs:
-      version: ${{ steps.release.outputs.gitTag }}
+      tag: ${{ steps.tag.outputs.tag }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Configure Cache
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+            ~/.cache/puppeteer
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+
+      - run: npm ci
+        if: steps.cache.outputs.cache-hit != 'true'
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
+
+      - name: Get tag
+        id: tag
+        run: echo "tag=$(git describe --tags --abbrev=0 2>/dev/null || echo '')" >> $GITHUB_OUTPUT
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: release
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
@@ -42,16 +77,16 @@ jobs:
       - name: Generate PDF
         run: npm run pdf
 
-      - name: Release
-        id: release
+      - name: Upload PDF to Release
+        if: needs.release.outputs.tag != ''
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
+        run: gh release upload ${{ needs.release.outputs.tag }} filippo-sallemi-resume.pdf --clobber
 
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    needs: release
+    needs: build
     permissions:
       contents: read
       pages: write
