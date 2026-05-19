@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/tonyputi/resume/compare/v1.2.6...v1.3.0) (2026-05-19)
+
+
+### Features
+
+* reposition CV as AI Solution Architect ([9926c5a](https://github.com/tonyputi/resume/commit/9926c5a05d7c349b4fe93d990a0dd8f6b8b52961))
+
 ## [1.2.6](https://github.com/tonyputi/resume/compare/v1.2.5...v1.2.6) (2026-03-05)
 
 
