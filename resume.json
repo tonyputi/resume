@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Filippo Sallemi",
-    "label": "Technology Leader & Engineering Architect · iGaming & Affiliates",
+    "label": "AI Solution Architect · iGaming & Affiliates",
     "email": "filippo@sallemi.it",
     "phone": "+35679248232",
     "url": "https://filippo.sallemi.it",
@@ -14,11 +14,16 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "filippo-sallemi",
-        "url": "https://linkedin.com/in/filippo-sallemi"
+        "username": "filipposallemi",
+        "url": "https://linkedin.com/in/filipposallemi"
+      },
+      {
+        "network": "GitHub",
+        "username": "tonyputi",
+        "url": "https://github.com/tonyputi"
       }
     ],
-    "summary": "Deeply technical engineering leader with 15+ years of experience across iGaming and Affiliates, including founding and scaling startups from the ground up. Proven track record in growing engineering organizations, driving technical transformations, and rescuing legacy systems within fast-paced, unstructured environments. Expert in cloud infrastructure optimization (19% cost reduction) and automating delivery pipelines (from days to hours using AWS Fargate/ECS). Certified Scrum Master with a strategic focus on AI-driven efficiency and a hands-on approach to technical leadership."
+    "summary": "AI Solution Architect with 15+ years across iGaming and Affiliates, currently driving the agentic transformation of a NASDAQ-listed iGaming group. Hands-on practitioner of the modern AI stack — Claude Code, Cursor, Gemini, custom MCP servers, agent skills, prompt engineering, and autonomous multi-agent systems — translated into production platforms that give every engineer governed access to AI. Proven across cloud cost optimization (19% AWS reduction), CI/CD acceleration (days → hours via Fargate/ECS), zero-downtime legacy rebuilds, and scaling engineering orgs from startup to 10+. Certified Scrum Master with a founder's mindset and a deep technical bench across PHP/Laravel, Go, Python, and AWS."
   },
   "work": [
     {
@@ -29,10 +34,12 @@
       "location": "Malta",
       "highlights": [
         "AI Strategy & Governance: Appointed to an elite leadership task force driving the company's transition toward an Agentic-Centric organizational structure.",
-        "AI Democratization & Security: Engineered and standardized a secure framework enabling decentralized AI tool creation across the organization — implementing Model Context Protocol (MCP) servers for safe integration of custom AI agents.",
+        "Enterprise AI Knowledge Platform: Built a centralized, AI-queryable knowledge layer that unifies organizational memory across teams — eliminating context loss and accelerating decision-making.",
+        "Agentic AI Workspace: Delivered a secure, SSO-gated AI runtime giving every engineer governed access to autonomous agents — natively wired to the knowledge platform so every agent operates with full organizational context.",
         "19% infrastructure cost reduction through strategic FinOps and cloud workload optimization in the first year.",
         "Delivery Acceleration: Reduced environment provisioning from days to hours by architecting automated pipelines using AWS Fargate/ECS.",
-        "Established org-wide architectural standards, IaC (Terraform) adoption, and CI/CD best practices across all engineering teams."
+        "Established org-wide architectural standards, IaC (Terraform) adoption, and CI/CD best practices across all engineering teams.",
+        "AI Evangelism: Delivered internal technical talks on AI and MCP servers, training engineering teams across the organization on agentic patterns and tooling."
       ]
     },
     {
@@ -44,7 +51,7 @@
       "highlights": [
         "Built and managed a cross-functional team of 6 (devs + QA); defined quarterly OKRs and delivery roadmaps aligned with business goals.",
         "Platform Modernisation: Led the full upgrade of the company's core software, reducing codebase by 2/3 — delivered on schedule with zero downtime.",
-        "Multiple internal hackathon wins; drove cross-team technical solutions and collaborated with DevOps on performance tuning and infrastructure improvements."
+        "Drove cross-team technical solutions and collaborated with DevOps on performance tuning and infrastructure improvements."
       ]
     },
     {
@@ -85,7 +92,7 @@
     },
     {
       "company": "Voismart SRL",
-      "position": "Senior Full Stack Developer",
+      "position": "Tech Lead",
       "startDate": "2007-01",
       "endDate": "2010-12",
       "location": "Milan, Italy",
@@ -119,16 +126,6 @@
       "issuer": "Scrum Alliance"
     },
     {
-      "name": "Machine Learning with Python",
-      "date": "2022",
-      "issuer": "LinkedIn Learning"
-    },
-    {
-      "name": "Microservices Expert",
-      "date": "2021",
-      "issuer": "Udemy"
-    },
-    {
       "name": "Engineering Leadership Suite",
       "date": "2023",
       "issuer": "LinkedIn Learning"
@@ -138,7 +135,7 @@
     {
       "name": "AI-Enhanced iGaming Aggregator",
       "description": "Designed and built a full casino aggregator using a microservices architecture, complete with a back-office platform enriched with AI capabilities. Integrated a custom MCP server to connect the aggregator's data layer to LLMs — enabling natural-language querying of GGR reports, automated risk management, and autonomous business intelligence without manual SQL overhead.",
-      "keywords": ["PHP/Laravel", "Redis", "MySQL", "PostgreSQL"]
+      "keywords": ["MCP Server", "LLMs", "Agentic AI", "Natural Language Querying", "RAG", "PHP/Laravel", "Redis", "MySQL", "PostgreSQL"]
     },
     {
       "name": "Crypto Payment Gateway",
@@ -147,6 +144,10 @@
     }
   ],
   "skills": [
+    {
+      "name": "AI & Agentic Systems",
+      "keywords": ["LLMs", "Claude Code", "Cursor", "Gemini", "MCP Servers", "Agent Skills", "Prompt Engineering", "RAG", "Vector Embeddings", "Multi-Agent Systems", "Anthropic API", "OpenAI API"]
+    },
     {
       "name": "Backend",
       "keywords": ["PHP", "Laravel", "Node.js", "Python", "Go"]
@@ -165,7 +166,7 @@
     },
     {
       "name": "Domains",
-      "keywords": ["iGaming", "Affiliate Systems", "Real-time Processing", "Crypto/Blockchain"]
+      "keywords": ["iGaming", "Affiliate Systems", "AI Governance", "Agentic Architecture", "MCP Protocol", "Cloud FinOps", "Real-time Processing", "Crypto/Blockchain"]
     }
   ],
   "languages": [
