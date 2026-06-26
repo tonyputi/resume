@@ -2,12 +2,13 @@
   "name": "resume",
   "version": "1.0.0",
   "scripts": {
-    "build": "npx resumed render resume.json --theme jsonresume-theme-macchiato -o index.html && node inject-pdf-link.mjs",
+    "build": "node render.mjs && node inject-pdf-link.mjs",
     "pdf": "node generate-pdf.mjs",
     "dev": "npm run build && open index.html"
   },
   "license": "MIT",
   "dependencies": {
+    "jsonresume-theme-data-driven": "^0.2.3",
     "jsonresume-theme-macchiato": "^1.1.0",
     "resumed": "^6.1.0"
   },
