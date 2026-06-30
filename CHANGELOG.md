@@ -1,3 +1,16 @@
+# [1.4.0](https://github.com/tonyputi/resume/compare/v1.3.0...v1.4.0) (2026-06-30)
+
+
+### Bug Fixes
+
+* improve PDF page breaks and add page margins ([4d0c27d](https://github.com/tonyputi/resume/commit/4d0c27d7715c0540416f3b2836ab38cf23abde7b))
+* load theme via dynamic import instead of require ([356436a](https://github.com/tonyputi/resume/commit/356436a36998e7d88db620ed817d64d7693a8bee))
+
+
+### Features
+
+* switch to data-driven theme for responsive layout ([c63b0a1](https://github.com/tonyputi/resume/commit/c63b0a1c4aeadc92513e737a98f2d50027c854d5))
+
 # [1.3.0](https://github.com/tonyputi/resume/compare/v1.2.6...v1.3.0) (2026-05-19)
 
 
