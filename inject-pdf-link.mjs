@@ -8,7 +8,7 @@ const button = `
     position: fixed;
     top: 24px;
     right: 24px;
-    background: #56817A;
+    background: var(--resume-color-accent, #0ea5e9);
     color: #fff;
     padding: 10px 18px;
     border-radius: 6px;
@@ -23,7 +23,7 @@ const button = `
     z-index: 9999;
     transition: background 0.2s;
   }
-  #download-pdf:hover { background: #456b64; }
+  #download-pdf:hover { background: var(--resume-color-accent-dark, #0284c7); }
   @media print { #download-pdf { display: none; } }
 </style>
 <a id="download-pdf" href="${PDF_URL}" target="_blank">
@@ -37,7 +37,6 @@ const button = `
 `
 
 let html = readFileSync('index.html', 'utf8')
-html = html.replace('Open Source Projects', 'Private Projects')
 
 html = html.replace('</body>', `${button}</body>`)
 writeFileSync('index.html', html)
