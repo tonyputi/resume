@@ -8,9 +8,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "jsonresume-theme-data-driven": "^0.2.3",
-    "jsonresume-theme-macchiato": "^1.1.0",
-    "resumed": "^6.1.0"
+    "jsonresume-theme-data-driven": "^0.2.3"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",

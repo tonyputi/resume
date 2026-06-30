@@ -18,7 +18,6 @@ await page.addStyleTag({
   content: `
     section {
       break-inside: auto !important;
-      page-break-inside: auto !important;
     }
   `
 })
