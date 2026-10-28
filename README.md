@@ -43,7 +43,7 @@ Run commands from the repository root. Puppeteer downloads Chromium during insta
 | `.github/workflows/deploy.yml` | PR checks and main-branch release/deployment |
 | `AGENTS.md` | Guidance for Pi and other coding agents |
 
-Edit `resume.json`, then run `make check` and inspect `index.html` and `resume.pdf`. Omit `work[].endDate` for current roles and use the theme's default date presentation. Do not hand-edit generated HTML/PDF files; they are ignored by Git. Schema validation and smoke tests do not replace a visual review.
+Edit `resume.json`, then run `make check` and inspect `index.html` and `resume.pdf`. Omit `work[].endDate` for current roles; only the rendering copy supplies the empty string needed by the theme to display “Present”. Do not hand-edit generated HTML/PDF files; they are ignored by Git. Schema validation and smoke tests do not replace a visual review.
 
 ## Website deployment and PDF releases
 

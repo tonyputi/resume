@@ -31,7 +31,7 @@ npm audit
 - `npm run check` validates original `resume.json` data with the official `@jsonresume/schema` validator, builds HTML, prints PDF and runs Node's built-in tests. `npm run validate` runs validation alone. Keep the pinned validator version and `resume.json.$schema` URL aligned. Add a small regression test for nontrivial changes.
 - `node --test` alone expects already-generated `index.html` and `resume.pdf`.
 - Run `actionlint` for workflow changes when available; it is not an npm dependency.
-- Omit `work[].endDate` for current roles and use the theme's default date presentation without normalization. Inspect HTML/PDF visually for theme or print changes.
+- Omit `work[].endDate` for current roles; `render.mjs` supplies the theme's empty-string “Present” marker only in its rendering copy, never before validation. Inspect HTML/PDF visually for theme or print changes.
 - Do not edit/commit generated `index.html`, PDFs, `_site/`, `node_modules/` or old local `resume-*.html` snapshots.
 - After dependency changes, update `package-lock.json`, verify a clean `npm ci` and check audit findings. Document upstream/bundled vulnerabilities rather than forcing incompatible overrides.
 
