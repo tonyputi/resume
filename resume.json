@@ -27,7 +27,7 @@
   },
   "work": [
     {
-      "company": "Gambling.com Group",
+      "name": "Gambling.com Group",
       "position": "Technical Architect",
       "startDate": "2025-01",
       "endDate": "",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "company": "Gambling.com Group",
+      "name": "Gambling.com Group",
       "position": "Development Leader",
       "startDate": "2022-05",
       "endDate": "2025-01",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "company": "Videoslots",
+      "name": "Videoslots",
       "position": "Senior Full Stack Developer",
       "startDate": "2021-01",
       "endDate": "2022-05",
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "company": "The Ear Limited",
+      "name": "The Ear Limited",
       "position": "Head of Development",
       "startDate": "2017-03",
       "endDate": "2020-05",
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "company": "Nomad NT",
+      "name": "Nomad NT",
       "position": "Founder & CEO",
       "startDate": "2011-01",
       "endDate": "2017-12",
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "company": "Voismart SRL",
+      "name": "Voismart SRL",
       "position": "Tech Lead",
       "startDate": "2007-01",
       "endDate": "2010-12",

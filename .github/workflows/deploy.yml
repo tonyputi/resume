@@ -3,125 +3,93 @@ name: Deploy CV
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cv-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
+  build:
+    name: Build and check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run check
+
+      - name: Stage public site only
+        if: github.event_name == 'push'
+        run: mkdir -p _site && cp index.html _site/
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name == 'push'
+        with:
+          path: _site
+
+      - uses: actions/upload-artifact@v7
+        if: github.event_name == 'push'
+        with:
+          name: release-pdf
+          path: resume.pdf
+          if-no-files-found: error
+          retention-days: 1
+
   release:
     name: Release
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
+    needs: build
     permissions:
       contents: write
       issues: write
       pull-requests: write
-    outputs:
-      tag: ${{ steps.tag.outputs.tag }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
-
-      - name: Configure Cache
-        id: cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            node_modules
-            ~/.cache/puppeteer
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node-
+          cache: npm
 
       - run: npm ci
-        if: steps.cache.outputs.cache-hit != 'true'
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: 'true'
 
+      - uses: actions/download-artifact@v8
+        with:
+          name: release-pdf
+
+      # The GitHub plugin uploads the checked PDF only when creating a release.
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
-
-      - name: Get tag
-        id: tag
-        run: echo "tag=$(git describe --tags --abbrev=0 2>/dev/null || echo '')" >> $GITHUB_OUTPUT
-
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    needs: release
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
-      - name: Configure Cache
-        id: cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            node_modules
-            ~/.cache/puppeteer
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node-
-
-      - run: npm ci
-        if: steps.cache.outputs.cache-hit != 'true'
-
-      - name: Build HTML
-        run: npm run build
-
-      - name: Generate PDF
-        run: npm run pdf
-
-      - name: Upload PDF to Release
-        if: needs.release.outputs.tag != ''
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload ${{ needs.release.outputs.tag }} resume.pdf --clobber
+        run: npx --no-install semantic-release
 
   deploy:
     name: Deploy
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
-    needs: build
+    needs: [build, release]
     permissions:
-      contents: read
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
-      - name: Configure Cache
-        id: cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            node_modules
-            ~/.cache/puppeteer
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node-
-
-      - run: npm ci
-        if: steps.cache.outputs.cache-hit != 'true'
-
-      - name: Build HTML
-        run: npm run build
-
       - uses: actions/configure-pages@v4
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
       - uses: actions/deploy-pages@v4
         id: deployment
