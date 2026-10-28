@@ -16,6 +16,7 @@ test('generated HTML includes the CV and hides the download button in print', { 
     assert.ok(text.includes(resume.basics.name), 'Missing candidate name')
     assert.ok(text.includes(resume.basics.label), 'Missing headline')
     assert.ok(text.includes(resume.basics.summary), 'Missing summary')
+    assert.ok(text.includes(' - Present'), 'Missing current-role indicator')
     for (const job of resume.work) {
       assert.ok(job.name, 'Employer must use the JSON Resume work.name field')
       assert.ok(text.includes(job.name), `Missing employer: ${job.name}`)

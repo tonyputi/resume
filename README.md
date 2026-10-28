@@ -11,7 +11,7 @@ Use Node.js **22.22.2+ within the 22.x line**, or **24.15+**, npm and Make. CI u
 
 ```sh
 npm ci          # Install locked dependencies and Puppeteer's browser
-make check      # Build HTML, generate PDF, run tests (also the default: make)
+make check      # Validate data, build HTML/PDF, run tests (also the default: make)
 npm run dev     # Build and open index.html (macOS)
 ```
 
@@ -21,10 +21,10 @@ The Makefile is a small entry point over the existing npm scripts:
 | --- | --- |
 | `make build` | Render `index.html` and add the PDF download button |
 | `make pdf` | Rebuild HTML, then generate `resume.pdf` |
-| `make check` | Build HTML/PDF and run tests; does not publish |
+| `make check` | Validate data, build HTML/PDF and run tests; does not publish |
 | `make release` | Check release preconditions, run checks, then publish a GitHub release if commits warrant one |
 
-The npm scripts remain available directly. `npm run pdf` alone uses the existing HTML; `node --test` alone checks existing outputs without regenerating them.
+The npm scripts remain available directly. `npm run validate` checks `resume.json` with the official `@jsonresume/schema@1.7.0` validator (draft-07), before the build in `npm run check` and CI. `npm run validate -- /path/to/copy.json` checks another file. The schema is bundled locally; validation does not fetch the `$schema` URL. Keep that versioned URL aligned with the dependency. `npm run pdf` alone uses the existing HTML; `node --test` alone expects existing outputs without regenerating them.
 
 Run commands from the repository root. Puppeteer downloads Chromium during installation; PDF generation requires its platform libraries on Linux. The browser runs without its sandbox for CI compatibility: use only trusted resume data and templates.
 
@@ -34,6 +34,7 @@ Run commands from the repository root. Puppeteer downloads Chromium during insta
 | --- | --- |
 | `resume.json` | Source of truth for CV content; employer names use `work[].name` |
 | `Makefile` | Build, PDF, checks and guarded local release commands |
+| `validate.mjs` | Validate original JSON Resume data; report field errors and exit nonzero on failure |
 | `render.mjs` | Render HTML using `jsonresume-theme-data-driven` |
 | `inject-pdf-link.mjs` | Add the download action, hidden when printing |
 | `generate-pdf.mjs` | Print A4 PDF with margins and section-break overrides |
@@ -42,7 +43,7 @@ Run commands from the repository root. Puppeteer downloads Chromium during insta
 | `.github/workflows/deploy.yml` | PR checks and main-branch release/deployment |
 | `AGENTS.md` | Guidance for Pi and other coding agents |
 
-Edit `resume.json`, then run `make check` and inspect `index.html` and `resume.pdf`. Do not hand-edit generated HTML/PDF files; they are ignored by Git. Smoke tests check rendering but do **not** replace full JSON Resume schema validation or a visual review.
+Edit `resume.json`, then run `make check` and inspect `index.html` and `resume.pdf`. Omit `work[].endDate` for current roles; only the rendering copy supplies the empty string needed by the theme to display “Present”. Do not hand-edit generated HTML/PDF files; they are ignored by Git. Schema validation and smoke tests do not replace a visual review.
 
 ## Website deployment and PDF releases
 

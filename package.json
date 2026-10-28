@@ -8,7 +8,8 @@
   "scripts": {
     "build": "node render.mjs && node inject-pdf-link.mjs",
     "pdf": "node generate-pdf.mjs",
-    "check": "npm run build && npm run pdf && node --test",
+    "validate": "node validate.mjs",
+    "check": "npm run validate && npm run build && npm run pdf && node --test",
     "dev": "npm run build && open index.html"
   },
   "license": "MIT",
@@ -16,6 +17,7 @@
     "jsonresume-theme-data-driven": "^0.2.9"
   },
   "devDependencies": {
+    "@jsonresume/schema": "1.7.0",
     "@semantic-release/changelog": "^7.0.0",
     "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/git": "^11.0.1",
