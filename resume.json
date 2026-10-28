@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "$schema": "https://cdn.jsdelivr.net/npm/@jsonresume/schema@1.7.0/schema.json",
   "basics": {
     "name": "Filippo Sallemi",
     "label": "AI Solution Architect · iGaming & Affiliates",
@@ -30,7 +30,6 @@
       "name": "Gambling.com Group",
       "position": "Technical Architect",
       "startDate": "2025-01",
-      "endDate": "",
       "location": "Malta",
       "highlights": [
         "AI Strategy & Governance: Appointed to an elite leadership task force driving the company's transition toward an Agentic-Centric organizational structure.",
