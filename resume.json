@@ -2,7 +2,7 @@
   "$schema": "https://cdn.jsdelivr.net/npm/@jsonresume/schema@1.7.0/schema.json",
   "basics": {
     "name": "Filippo Sallemi",
-    "label": "AI Solution Architect · iGaming & Affiliates",
+    "label": "Technical Architect · Engineering & AI Leadership",
     "email": "filippo@sallemi.it",
     "phone": "+35679248232",
     "url": "https://filippo.sallemi.it",
@@ -23,80 +23,106 @@
         "url": "https://github.com/tonyputi"
       }
     ],
-    "summary": "AI Solution Architect with 15+ years across iGaming and Affiliates, currently driving the agentic transformation of a NASDAQ-listed iGaming group. Hands-on practitioner of the modern AI stack — Claude Code, Cursor, Gemini, custom MCP servers, agent skills, prompt engineering, and autonomous multi-agent systems — translated into production platforms that give every engineer governed access to AI. Proven across cloud cost optimization (19% AWS reduction), CI/CD acceleration (days → hours via Fargate/ECS), zero-downtime legacy rebuilds, and scaling engineering orgs from startup to 10+. Certified Scrum Master with a founder's mindset and a deep technical bench across PHP/Laravel, Go, Python, and AWS."
+    "summary": "Technical Architect with experience as a Head of Development and Lead Developer, combining engineering leadership with hands-on expertise in AI architecture, systems integration and cloud platforms. My approach is to give teams clear technical direction, develop their judgement and distribute knowledge and responsibility so they can work autonomously. My technical experience includes AI agents, workflow automation, persistent memory, retrieval-augmented generation (RAG) and Model Context Protocol (MCP) integrations. I have worked across iGaming and affiliate businesses, with a focus on practical outcomes, reliable systems and sustainable operating costs."
   },
   "work": [
     {
-      "name": "Gambling.com Group",
-      "position": "Technical Architect",
+      "name": "Grandstand (formerly Gambling.com Group)",
+      "position": "Technical Solutions Architect",
       "startDate": "2025-01",
       "location": "Malta",
       "highlights": [
-        "AI Strategy & Governance: Appointed to an elite leadership task force driving the company's transition toward an Agentic-Centric organizational structure.",
-        "Enterprise AI Knowledge Platform: Built a centralized, AI-queryable knowledge layer that unifies organizational memory across teams — eliminating context loss and accelerating decision-making.",
-        "Agentic AI Workspace: Delivered a secure, SSO-gated AI runtime giving every engineer governed access to autonomous agents — natively wired to the knowledge platform so every agent operates with full organizational context.",
-        "19% infrastructure cost reduction through strategic FinOps and cloud workload optimization in the first year.",
-        "Delivery Acceleration: Reduced environment provisioning from days to hours by architecting automated pipelines using AWS Fargate/ECS.",
-        "Established org-wide architectural standards, IaC (Terraform) adoption, and CI/CD best practices across all engineering teams.",
-        "AI Evangelism: Delivered internal technical talks on AI and MCP servers, training engineering teams across the organization on agentic patterns and tooling."
+        "AI Strategy & Adoption: Selected to contribute to a cross-functional leadership initiative shaping how agentic AI is introduced across software engineering, translating research into practical standards, tooling, and adoption patterns.",
+        "Enterprise AI Platform: Conceived an internal AI memory platform and led its initial technical development, turning the concept into a working product. Coordinated its continued development and rollout across development, delivery planning, infrastructure, testing and onboarding.",
+        "Engineering Enablement: Helped engineering teams adopt AI through practical guidance, reusable MCP integrations, shared development patterns and technical knowledge sharing.",
+        "Contributed to cloud cost optimisation through FinOps analysis and workload improvements.",
+        "Delivery Acceleration: Improved environment provisioning by architecting automated cloud deployment pipelines using AWS Fargate/ECS.",
+        "Contributed to architectural standards, Infrastructure as Code adoption with Terraform, and CI/CD practices across engineering teams."
       ]
     },
     {
       "name": "Gambling.com Group",
-      "position": "Development Leader",
-      "startDate": "2022-05",
+      "position": "Lead Developer",
+      "startDate": "2022-07",
       "endDate": "2025-01",
       "location": "Malta",
       "highlights": [
-        "Built and managed a cross-functional team of 6 (devs + QA); defined quarterly OKRs and delivery roadmaps aligned with business goals.",
-        "Platform Modernisation: Led the full upgrade of the company's core software, reducing codebase by 2/3 — delivered on schedule with zero downtime.",
-        "Drove cross-team technical solutions and collaborated with DevOps on performance tuning and infrastructure improvements."
+        "Led a development team spanning engineering and QA, combining people management and delivery responsibility with hands-on technical leadership.",
+        "Developed engineers through regular one-to-ones, individual development plans, actionable feedback and increasing ownership of technical decisions and delivery.",
+        "Aligned team priorities and delivery plans with product goals, balancing business commitments, technical quality and opportunities for engineers to grow.",
+        "Led a major platform upgrade while maintaining feature delivery, coordinating technical decisions, engineering practices and dependencies with other teams."
       ]
     },
     {
+      "name": "Gambling.com Group",
+      "position": "Senior Software Developer",
+      "startDate": "2021-11",
+      "endDate": "2022-08",
+      "location": "Malta"
+    },
+    {
       "name": "Videoslots",
-      "position": "Senior Full Stack Developer",
-      "startDate": "2021-01",
-      "endDate": "2022-05",
+      "position": "Senior Backend Developer",
+      "startDate": "2020-10",
+      "endDate": "2021-11",
       "location": "Malta",
       "highlights": [
-        "Resolved a critical technical impasse that had stalled ADM/AAMS certification for nearly a year, securing the Italian license within 3 months through a ruthless audit and refactoring of compliance protocols.",
-        "Optimised high-volume transactional backend in PHP/Laravel handling massive real-time gaming traffic with focus on data integrity and security."
+        "Contributed to the integration of the Italian ADM protocol, helping resolve an implementation that had stalled. Managed the technical work during the certification session, supporting its successful completion."
       ]
     },
     {
       "name": "The Ear Limited",
       "position": "Head of Development",
-      "startDate": "2017-03",
-      "endDate": "2020-05",
+      "startDate": "2019-03",
+      "endDate": "2020-10",
       "location": "Malta",
       "summary": "iGaming Startup",
       "highlights": [
-        "Scaled engineering org from early-stage to 10+ members; reported to CTO; co-defined technical roadmap and organizational structure.",
-        "Casino Aggregator from zero: Integrated 40+ third-party game providers with sub-second latency and high availability under massive transactional load.",
-        "Spearheaded the successful migration of a legacy 'spaghetti-code' platform into a modern, scalable architecture within a few months. Managed the full transition of technical debt into a high-performance system while maintaining service continuity.",
-        "Managed multi-jurisdiction compliance (MGA, UKGC, Italy, Colombia) — 100% regulatory alignment across all markets."
+        "Built and developed the engineering team of an iGaming startup, reporting to the CTO and helping shape the technical roadmap and team structure.",
+        "Built a casino aggregation platform integrating third-party game providers, with a focus on performance and availability.",
+        "Led the migration of a legacy platform to a modern architecture, reducing technical debt while maintaining service continuity.",
+        "Led engineering work supporting multi-jurisdiction regulatory requirements across MGA, UKGC, Italy, and Colombia."
+      ]
+    },
+    {
+      "name": "The Ear Limited",
+      "position": "Senior PHP Programmer",
+      "startDate": "2018-01",
+      "endDate": "2020-10",
+      "location": "Malta",
+      "highlights": [
+        "Developed REST APIs and microservices with Lumen, alongside customer-facing websites built with Laravel. Managed and configured the supporting infrastructure, including servers, VPNs, DNS and firewalls."
       ]
     },
     {
       "name": "Nomad NT",
-      "position": "Founder & CEO",
-      "startDate": "2011-01",
-      "endDate": "2017-12",
-      "location": "Malta",
+      "position": "Company Owner",
+      "startDate": "2010-01",
+      "endDate": "2021-11",
+      "location": "Ragusa, Italy",
       "highlights": [
-        "Founded and ran a technology company for 7 years — full P&L ownership, client acquisition, and end-to-end technical delivery for government and private-sector clients.",
-        "Delivered Laravel web platforms, Linux infrastructure, network security systems, and embedded automation projects (maritime/yachts)."
+        "Delivered custom PHP and C++ applications and infrastructure solutions for public- and private-sector clients.",
+        "Supplied and configured servers, networks, security systems and building automation for public, private and superyacht projects."
       ]
     },
     {
-      "name": "Voismart SRL",
-      "position": "Tech Lead",
+      "name": "VoiSmart",
+      "position": "Senior PHP Programmer",
       "startDate": "2007-01",
-      "endDate": "2010-12",
+      "endDate": "2009-12",
       "location": "Milan, Italy",
       "highlights": [
-        "Led a team of 6 developers building the web UI for a VoIP/PBX product; worked extensively with Asterisk, SIP protocol and advanced networking."
+        "Developed the user interface for the company's VoIP/PBX product and subsequently led the PHP development team. Worked on the Fax over IP (FoIP) user interface and Orchestra."
+      ]
+    },
+    {
+      "name": "art-insite.org",
+      "position": "Company Owner",
+      "startDate": "2001-01",
+      "endDate": "2006-12",
+      "location": "Milan, Italy",
+      "highlights": [
+        "Developed PHP-based websites and web applications for public- and private-sector clients."
       ]
     }
   ],
@@ -120,52 +146,50 @@
   ],
   "certificates": [
     {
-      "name": "Certified Scrum Master (CSM)",
-      "date": "2021",
-      "issuer": "Scrum Alliance"
+      "name": "Certified ScrumMaster (CSM)",
+      "date": "2021-08-20",
+      "issuer": "Scrum Alliance",
+      "url": "https://bcert.me/sjldzfezc"
     },
     {
-      "name": "Engineering Leadership Suite",
-      "date": "2023",
-      "issuer": "LinkedIn Learning"
-    }
-  ],
-  "projects": [
-    {
-      "name": "AI-Enhanced iGaming Aggregator",
-      "description": "Designed and built a full casino aggregator using a microservices architecture, complete with a back-office platform enriched with AI capabilities. Integrated a custom MCP server to connect the aggregator's data layer to LLMs — enabling natural-language querying of GGR reports, automated risk management, and autonomous business intelligence without manual SQL overhead.",
-      "keywords": ["MCP Server", "LLMs", "Agentic AI", "Natural Language Querying", "RAG", "PHP/Laravel", "Redis", "MySQL", "PostgreSQL"]
+      "name": "Coaching Skills for Leaders and Managers",
+      "date": "2023-08",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/c1be0341cb3c41f4637b054c3e62e74c42dda8ba14e381f2c1a67c7a891b1517/"
     },
     {
-      "name": "Crypto Payment Gateway",
-      "description": "Built a self-hosted Monero payment infrastructure using a local full node — implemented subaddress-based wallet management for per-transaction isolation, real-time payment verification via Monero RPC, and full transaction lifecycle handling with no third-party payment provider.",
-      "keywords": ["PHP/Laravel", "Go", "Python", "PostgreSQL"]
+      "name": "Managing High Performers",
+      "date": "2023-08",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/76f6312c0316d7316533e03caaccd12740d12e3a42d52ad42925bbc2c8ed963d/"
+    },
+    {
+      "name": "Managing Organizational Change for Managers",
+      "date": "2023-08",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/dc4b54044be83ad038ef054cc44f2c4c10a6bb81e2b0a66c6d114336d876e447/"
     }
   ],
   "skills": [
     {
-      "name": "AI & Agentic Systems",
-      "keywords": ["LLMs", "Claude Code", "Cursor", "Gemini", "MCP Servers", "Agent Skills", "Prompt Engineering", "RAG", "Vector Embeddings", "Multi-Agent Systems", "Anthropic API", "OpenAI API"]
+      "name": "Leadership & Delivery",
+      "keywords": ["Engineering Leadership", "Team Management", "Technical Strategy", "Stakeholder Management", "Roadmapping", "OKRs", "Agile Delivery"]
     },
     {
-      "name": "Backend",
-      "keywords": ["PHP", "Laravel", "Node.js", "Python", "Go"]
+      "name": "Architecture & AI",
+      "keywords": ["Distributed Systems", "Agentic AI", "LLMs", "RAG", "MCP Servers", "AI Governance", "Cloud Architecture", "Platform Engineering", "Vector Embeddings", "Multi-Agent Systems"]
     },
     {
-      "name": "Frontend",
-      "keywords": ["Vue.js", "JavaScript", "Tailwind CSS", "Livewire"]
+      "name": "Engineering",
+      "keywords": ["PHP", "Laravel", "Python", "Go", "Node.js", "JavaScript", "Vue.js", "Livewire"]
     },
     {
-      "name": "Infrastructure",
-      "keywords": ["AWS", "Fargate", "ECS", "Lambda", "Docker", "Terraform", "Ansible", "GitHub Actions", "CI/CD"]
+      "name": "Cloud & Infrastructure",
+      "keywords": ["AWS", "Fargate", "ECS", "Lambda", "Docker", "Terraform", "Ansible", "GitHub Actions", "CI/CD", "Cloud FinOps"]
     },
     {
-      "name": "Databases",
-      "keywords": ["MySQL", "PostgreSQL", "Redis", "Elasticsearch"]
-    },
-    {
-      "name": "Domains",
-      "keywords": ["iGaming", "Affiliate Systems", "AI Governance", "Agentic Architecture", "MCP Protocol", "Cloud FinOps", "Real-time Processing", "Crypto/Blockchain"]
+      "name": "Data & Domains",
+      "keywords": ["MySQL", "PostgreSQL", "Redis", "Elasticsearch", "iGaming", "Affiliate Systems", "Real-time Processing"]
     }
   ],
   "languages": [

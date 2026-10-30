@@ -19,6 +19,9 @@ await page.addStyleTag({
     section {
       break-inside: auto !important;
     }
+    section > div:has(> strong + div > span) {
+      break-inside: avoid;
+    }
   `
 })
 
