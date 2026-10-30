@@ -1,3 +1,15 @@
+# [1.6.0](https://github.com/tonyputi/resume/compare/v1.5.1...v1.6.0) (2026-10-30)
+
+
+### Bug Fixes
+
+* concise Memento description restores three-page PDF ([231e995](https://github.com/tonyputi/resume/commit/231e995b62c18ca6a57948146202ebef890c10c2)), closes [#20](https://github.com/tonyputi/resume/issues/20)
+
+
+### Features
+
+* feature Memento and personal open-source projects ([9681564](https://github.com/tonyputi/resume/commit/9681564180dd0c6dca6324865f97fe02ef2bf698)), closes [#20](https://github.com/tonyputi/resume/issues/20)
+
 ## [1.5.1](https://github.com/tonyputi/resume/compare/v1.5.0...v1.5.1) (2026-10-30)
 
 
