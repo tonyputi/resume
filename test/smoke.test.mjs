@@ -85,7 +85,7 @@ test('generated HTML includes the CV and hides the download button in print', { 
     assert.equal(await page.$eval('#download-pdf', el => el.getAttribute('aria-label')), 'Download PDF')
     assert.equal(await page.$$eval('main', elements => elements.length), 1)
     assert.equal(await page.$eval('main h1', el => el.textContent), resume.basics.name)
-    for (const width of [320, 390, 480]) {
+    for (const width of [280, 300, 320, 390, 480]) {
       await page.setViewport({ width, height: 900 })
       const mobile = await page.evaluate(() => {
         const button = document.querySelector('#download-pdf')

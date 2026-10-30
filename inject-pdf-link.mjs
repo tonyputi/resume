@@ -31,6 +31,9 @@ const button = `
     #download-pdf { top: 16px; right: 16px; padding: 0; width: 44px; height: 44px; justify-content: center; }
     #download-pdf span { display: none; }
   }
+  @media screen and (max-width: 319px) {
+    header h1 { padding-right: 60px; }
+  }
   @media print { #download-pdf { display: none; } }
 </style>
 <a id="download-pdf" href="${PDF_URL}" target="_blank" aria-label="Download PDF">
