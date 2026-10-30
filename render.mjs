@@ -11,5 +11,7 @@ const html = await render({
 
 const document = html.replace(/<title>[\s\S]*?<\/title>/, '')
   .replace('</head>', () => `${renderMetadata(resume.basics)}</head>`)
+  .replace('<body>', '<body><main>')
+  .replace('</body>', '</main></body>')
 await writeFile('index.html', document)
 console.log('Rendered index.html with jsonresume-theme-data-driven')

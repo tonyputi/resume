@@ -82,7 +82,32 @@ test('generated HTML includes the CV and hides the download button in print', { 
     assert.equal(await page.$eval('#download-pdf', el => el.href),
       'https://github.com/tonyputi/resume/releases/latest/download/resume.pdf')
     assert.notEqual(await page.$eval('#download-pdf', el => getComputedStyle(el).display), 'none')
+    assert.equal(await page.$eval('#download-pdf', el => el.getAttribute('aria-label')), 'Download PDF')
+    assert.equal(await page.$$eval('main', elements => elements.length), 1)
+    assert.equal(await page.$eval('main h1', el => el.textContent), resume.basics.name)
+    for (const width of [280, 300, 320, 390, 480]) {
+      await page.setViewport({ width, height: 900 })
+      const mobile = await page.evaluate(() => {
+        const button = document.querySelector('#download-pdf')
+        const range = document.createRange()
+        range.selectNodeContents(document.querySelector('h1'))
+        const name = range.getBoundingClientRect()
+        const rect = button.getBoundingClientRect()
+        return {
+          overlap: name.left < rect.right && name.right > rect.left && name.top < rect.bottom && name.bottom > rect.top,
+          labelDisplay: getComputedStyle(button.querySelector('span')).display,
+          width: rect.width,
+          height: rect.height,
+          overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+        }
+      })
+      assert.deepEqual(mobile, { overlap: false, labelDisplay: 'none', width: 44, height: 44, overflow: false }, `Mobile layout at ${width}px`)
+    }
+    await page.setViewport({ width: 1280, height: 900 })
+    assert.notEqual(await page.$eval('#download-pdf span', el => getComputedStyle(el).display), 'none')
+    assert.equal(await page.$eval('header a', el => getComputedStyle(el).color), 'rgb(3, 105, 161)')
     await page.emulateMediaType('print')
+    assert.equal(await page.$eval('header a', el => getComputedStyle(el).color), 'rgb(14, 165, 233)')
     assert.equal(await page.$eval('#download-pdf', el => getComputedStyle(el).display), 'none')
     const pdfScript = await readFile('generate-pdf.mjs', 'utf8')
     const printStyles = pdfScript.match(/content: `([\s\S]*?)`/)?.[1]
