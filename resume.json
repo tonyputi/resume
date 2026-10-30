@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "$schema": "https://cdn.jsdelivr.net/npm/@jsonresume/schema@1.7.0/schema.json",
   "basics": {
     "name": "Filippo Sallemi",
     "label": "Technical Architect · Engineering & AI Leadership",
@@ -23,82 +23,81 @@
         "url": "https://github.com/tonyputi"
       }
     ],
-    "summary": "Technical Architect with 15+ years of experience across engineering leadership, software architecture, and platform development. Former Development Leader and Head of Development with hands-on experience managing engineering teams of 6–10+ people across hiring, performance management, mentoring, delivery, and technical strategy. Currently focused on enterprise AI adoption and architecture, including originating an internal AI platform taken from concept to company-wide rollout. Track record includes a measured 19% cloud cost reduction, cutting environment provisioning from days to hours, and delivering major platform modernisation with zero downtime."
+    "summary": "Engineering and AI leader with experience across software architecture, platform development, and engineering delivery. Former Development Leader and Head of Development with experience building and managing teams, shaping technical direction, and aligning delivery with business goals. Work includes enterprise AI adoption, agentic systems, RAG, cloud architecture, and platform modernisation across iGaming and affiliate businesses."
   },
   "work": [
     {
-      "company": "Gambling.com Group",
+      "name": "Grandstand (formerly Gambling.com Group)",
       "position": "Technical Architect",
       "startDate": "2025-01",
-      "endDate": "",
       "location": "Malta",
       "highlights": [
         "AI Strategy & Adoption: Selected to contribute to a cross-functional leadership initiative shaping how agentic AI is introduced across software engineering, translating research into practical standards, tooling, and adoption patterns.",
-        "Enterprise AI Platform: Originated and led an internal AI knowledge and productivity platform from concept to company-wide rollout, owning its initial product vision, architecture, and delivery while driving roadmapping, infrastructure, and onboarding.",
+        "Enterprise AI Platform: Developed an internal AI knowledge and productivity platform, contributing to its vision, architecture, delivery, infrastructure, and onboarding.",
         "Engineering Enablement: Drove AI adoption across engineering through internal talks, knowledge sharing, and hands-on enablement, helping teams adopt agentic workflows, MCP-based integrations, and governed AI tooling.",
-        "Delivered a measured 19% cloud cost reduction through FinOps analysis and workload optimisation.",
-        "Delivery Acceleration: Reduced environment provisioning from days to hours by architecting automated cloud deployment pipelines using AWS Fargate/ECS.",
-        "Established organisation-wide architectural standards, Infrastructure as Code adoption with Terraform, and CI/CD best practices across engineering teams."
+        "Contributed to cloud cost optimisation through FinOps analysis and workload improvements.",
+        "Delivery Acceleration: Improved environment provisioning by architecting automated cloud deployment pipelines using AWS Fargate/ECS.",
+        "Contributed to architectural standards, Infrastructure as Code adoption with Terraform, and CI/CD practices across engineering teams."
       ]
     },
     {
-      "company": "Gambling.com Group",
+      "name": "Gambling.com Group",
       "position": "Development Leader",
       "startDate": "2022-05",
       "endDate": "2025-01",
       "location": "Malta",
       "highlights": [
-        "Managed a cross-functional team of 6 engineers and QA with direct responsibility for hiring, performance reviews, mentoring, delegation, delivery, and people development, while contributing to promotion and compensation decisions.",
+        "Built and managed a cross-functional team of developers and QA, supporting delivery and team development.",
         "Owned quarterly OKRs and delivery roadmaps, aligning team priorities and technical execution with business goals.",
-        "Platform Modernisation: Led the full upgrade of the company's core software, reducing the codebase by two-thirds and delivering on schedule with zero downtime.",
+        "Platform Modernisation: Led an upgrade of the company's core software, reducing codebase complexity while maintaining service continuity.",
         "Drove cross-team technical initiatives and partnered with DevOps on performance tuning, infrastructure improvements, and delivery reliability."
       ]
     },
     {
-      "company": "Videoslots",
+      "name": "Videoslots",
       "position": "Senior Full Stack Developer",
       "startDate": "2021-01",
       "endDate": "2022-05",
       "location": "Malta",
       "highlights": [
-        "Resolved a critical technical impasse that had stalled ADM/AAMS certification for nearly a year, securing the Italian licence within 3 months through a systematic audit and refactoring of compliance protocols.",
+        "Helped resolve a technical impasse affecting ADM/AAMS certification through an audit and refactoring of compliance protocols.",
         "Optimised a high-volume transactional PHP/Laravel backend handling real-time gaming traffic, with a focus on data integrity, reliability, and security."
       ]
     },
     {
-      "company": "The Ear Limited",
+      "name": "The Ear Limited",
       "position": "Head of Development",
       "startDate": "2017-03",
       "endDate": "2020-05",
       "location": "Malta",
       "summary": "iGaming Startup",
       "highlights": [
-        "Led an engineering function of 10+ direct reports, with responsibility for hiring, performance management, people development, promotion and compensation recommendations, delivery, and team structure while reporting to the CTO.",
+        "Led an engineering function, supporting team development, delivery, and organisational structure while reporting to the CTO.",
         "Helped define the technical roadmap and engineering practices while remaining hands-on with architecture and critical platform decisions.",
-        "Built a casino aggregation platform from the ground up, integrating 40+ third-party game providers with sub-second latency and high availability under significant transactional load.",
-        "Led the migration of a legacy platform to a modern, scalable architecture within months, reducing technical debt while maintaining service continuity.",
+        "Built a casino aggregation platform integrating third-party game providers, with a focus on performance and availability.",
+        "Led the migration of a legacy platform to a modern architecture, reducing technical debt while maintaining service continuity.",
         "Led engineering work supporting multi-jurisdiction regulatory requirements across MGA, UKGC, Italy, and Colombia."
       ]
     },
     {
-      "company": "Nomad NT",
+      "name": "Nomad NT",
       "position": "Founder & CEO",
       "startDate": "2011-01",
       "endDate": "2017-12",
       "location": "Malta",
       "highlights": [
-        "Co-founded and ran a technology company for 7 years with P&L ownership, client acquisition, and end-to-end technical delivery for government and private-sector clients.",
+        "Ran a technology company, with responsibility for client acquisition and technical delivery for government and private-sector clients.",
         "Delivered web platforms, Linux infrastructure, network security systems, and embedded automation projects across commercial and maritime environments."
       ]
     },
     {
-      "company": "Voismart SRL",
+      "name": "Voismart SRL",
       "position": "Tech Lead",
       "startDate": "2007-01",
       "endDate": "2010-12",
       "location": "Milan, Italy",
       "highlights": [
-        "Led a team of 6 developers building the web UI for a VoIP/PBX product, combining team leadership with deep work across Asterisk, SIP, and advanced networking."
+        "Led developers building the web UI for a VoIP/PBX product, combining team leadership with work across Asterisk, SIP, and networking."
       ]
     }
   ],
@@ -142,7 +141,7 @@
   "skills": [
     {
       "name": "Leadership & Delivery",
-      "keywords": ["Engineering Leadership", "Team Management", "Performance Management", "Hiring", "Technical Strategy", "Stakeholder Management", "Roadmapping", "OKRs", "Agile Delivery"]
+      "keywords": ["Engineering Leadership", "Team Management", "Technical Strategy", "Stakeholder Management", "Roadmapping", "OKRs", "Agile Delivery"]
     },
     {
       "name": "Architecture & AI",
