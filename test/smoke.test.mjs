@@ -84,6 +84,21 @@ test('generated HTML includes the CV and hides the download button in print', { 
     assert.notEqual(await page.$eval('#download-pdf', el => getComputedStyle(el).display), 'none')
     await page.emulateMediaType('print')
     assert.equal(await page.$eval('#download-pdf', el => getComputedStyle(el).display), 'none')
+    const pdfScript = await readFile('generate-pdf.mjs', 'utf8')
+    const printStyles = pdfScript.match(/content: `([\s\S]*?)`/)?.[1]
+    assert.ok(printStyles, 'Missing PDF print styles')
+    await page.addStyleTag({ content: printStyles })
+    for (const skill of resume.skills ?? []) {
+      const group = await page.evaluate(name => {
+        const heading = [...document.querySelectorAll('section > div > strong')]
+          .find(element => element.textContent === name)
+        return heading && {
+          breakInside: getComputedStyle(heading.parentElement).breakInside,
+          hasTags: !!heading.parentElement.querySelector('div > span'),
+        }
+      }, skill.name)
+      assert.deepEqual(group, { breakInside: 'avoid', hasTags: true }, `Unprotected skill group: ${skill.name}`)
+    }
   } finally {
     await browser.close()
   }
