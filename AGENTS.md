@@ -32,7 +32,7 @@ npm audit
 - `node --test` alone expects already-generated `index.html` and `resume.pdf`.
 - Run `actionlint` for workflow changes when available; it is not an npm dependency.
 - Omit `work[].endDate` for current roles; `render.mjs` supplies the theme's empty-string “Present” marker only in its rendering copy, never before validation. Inspect HTML/PDF visually for theme or print changes.
-- Metadata comes from `resume.json` via `metadata.mjs`; keep canonical/social URLs on the production domain and do not invent dates, handles or a person photo. Escape HTML values and JSON-LD script delimiters. Brand SVG sources and their PNG exports in `assets/` are tracked; keep them synchronized.
+- Metadata comes from `resume.json` via `metadata.mjs`; keep canonical/social URLs on the production domain and do not invent dates, handles or a person photo. Escape HTML values and JSON-LD script delimiters. Keep the favicon SVG and its PNG exports in `assets/` synchronized; the social preview is supplied as a PNG.
 - Do not edit/commit generated `index.html`, PDFs, `_site/`, `node_modules/` or old local `resume-*.html` snapshots.
 - After dependency changes, update `package-lock.json`, verify a clean `npm ci` and check audit findings. Document upstream/bundled vulnerabilities rather than forcing incompatible overrides.
 

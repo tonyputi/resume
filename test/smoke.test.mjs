@@ -55,7 +55,7 @@ test('generated HTML includes the CV and hides the download button in print', { 
     const [intro] = new Intl.Segmenter('en', { granularity: 'sentence' }).segment(resume.basics.summary)
     const description = intro.segment.trim()
     const image = new URL('assets/social-preview.png', canonical).href
-    const imageAlt = `${resume.basics.name} — Curriculum vitae`
+    const imageAlt = `${resume.basics.name} — Simpler systems. Stronger teams. Engineering leadership, AI architecture.`
     assert.equal(head.titleCount, 1)
     assert.equal(head.title, title)
     assert.equal(head.canonical, canonical)

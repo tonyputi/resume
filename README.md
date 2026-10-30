@@ -53,7 +53,7 @@ The build derives page/social titles from `basics.name` and `basics.label`, desc
 
 Keep `basics.url` on the production domain: canonical, structured-data IDs and social-image URLs must not change to a preview/secondary-host URL. Favicons use relative paths so the site also works under the GitHub Pages subdirectory. Both hosts must publish `assets/` alongside `index.html`; do not publish the whole repository as the GitHub Pages artifact.
 
-Brand artwork is deliberately limited to initials, name and website, not the professional headline. SVG sources are tracked alongside their PNG exports: 96×96 favicon, 180×180 Apple touch icon and 1200×630 social preview. Update matching exports if the artwork changes. These images are not used as a fake person photograph in structured data. Search engines and social platforms may cache or choose different snippets/previews; validate live URLs again after deployment.
+The supplied favicon SVG, 48×48 PNG and 180×180 Apple touch icon are tracked; keep them consistent if the icon changes. The 1200×630 social preview is supplied as a PNG. These images are not used as a person photograph in structured data. Search engines and social platforms may cache or choose different snippets/previews; validate live URLs again after deployment.
 
 ## Website deployment and PDF releases
 

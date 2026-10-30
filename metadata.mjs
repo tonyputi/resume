@@ -9,7 +9,7 @@ export function renderMetadata({ name, label, summary, url, profiles = [] }) {
   const [intro] = new Intl.Segmenter('en', { granularity: 'sentence' }).segment(summary)
   const description = intro.segment.trim()
   const image = new URL('assets/social-preview.png', canonical).href
-  const imageAlt = `${name} — Curriculum vitae`
+  const imageAlt = `${name} — Simpler systems. Stronger teams. Engineering leadership, AI architecture.`
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'ProfilePage',
@@ -33,7 +33,7 @@ export function renderMetadata({ name, label, summary, url, profiles = [] }) {
 <meta name="description" content="${escapeHtml(description)}">
 <meta name="author" content="${escapeHtml(name)}">
 <link rel="canonical" href="${escapeHtml(canonical.href)}">
-<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon.png">
 <link rel="icon" type="image/svg+xml" sizes="any" href="assets/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="profile">

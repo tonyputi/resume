@@ -21,7 +21,7 @@ test('metadata escapes HTML and script delimiters and rejects insecure canonical
 
 test('PNG assets match the declared favicon, touch icon and social-image dimensions', async () => {
   for (const [file, width, height] of [
-    ['favicon.png', 96, 96], ['apple-touch-icon.png', 180, 180], ['social-preview.png', 1200, 630],
+    ['favicon.png', 48, 48], ['apple-touch-icon.png', 180, 180], ['social-preview.png', 1200, 630],
   ]) {
     const png = await readFile(`assets/${file}`)
     assert.equal(png.subarray(0, 8).toString('hex'), '89504e470d0a1a0a', file)
