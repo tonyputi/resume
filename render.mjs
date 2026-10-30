@@ -1,14 +1,15 @@
 import { readFile, writeFile } from 'fs/promises'
-
-// The `resumed` CLI imports the theme's bare entry, which resolves to its JSX
-// `import` condition and fails to load. We import the package's compiled `dist`
-// subpath instead (its `import` condition points at plain compiled JS) and call
-// its `render` function ourselves. Dynamic import keeps this working on any Node
-// version — `require()` of this ESM-only package only works on Node >= 22.12.
-const { render } = await import('jsonresume-theme-data-driven/dist')
+import { render } from 'jsonresume-theme-data-driven'
+import { renderMetadata } from './metadata.mjs'
 
 const resume = JSON.parse(await readFile('resume.json', 'utf8'))
-const html = await render(resume)
+// The theme needs an empty endDate to show Present; the schema requires omission.
+const html = await render({
+  ...resume,
+  work: resume.work?.map(job => ({ endDate: '', ...job })),
+})
 
-await writeFile('index.html', html)
+const document = html.replace(/<title>[\s\S]*?<\/title>/, '')
+  .replace('</head>', () => `${renderMetadata(resume.basics)}</head>`)
+await writeFile('index.html', document)
 console.log('Rendered index.html with jsonresume-theme-data-driven')

@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/tonyputi/resume/compare/v1.4.0...v1.4.1) (2026-10-28)
+
+
+### Bug Fixes
+
+* harden CV publishing and refresh project tooling [skip ci] ([1b99ba7](https://github.com/tonyputi/resume/commit/1b99ba7135bf4aa283e53218212ae5ed0a0fbd40)), closes [#3](https://github.com/tonyputi/resume/issues/3) [#5](https://github.com/tonyputi/resume/issues/5) [#7](https://github.com/tonyputi/resume/issues/7) [#9](https://github.com/tonyputi/resume/issues/9) [#11](https://github.com/tonyputi/resume/issues/11)
+
 # [1.4.0](https://github.com/tonyputi/resume/compare/v1.3.0...v1.4.0) (2026-06-30)
 
 
