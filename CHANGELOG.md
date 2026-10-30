@@ -1,3 +1,11 @@
+## [1.5.1](https://github.com/tonyputi/resume/compare/v1.5.0...v1.5.1) (2026-10-30)
+
+
+### Bug Fixes
+
+* improve mobile download and accessibility ([365abae](https://github.com/tonyputi/resume/commit/365abaef8ed24a75a8ff4e879ac64109539762a9)), closes [#6](https://github.com/tonyputi/resume/issues/6)
+* prevent download overlap on narrow screens ([3fe985d](https://github.com/tonyputi/resume/commit/3fe985d0af2101102cbec6f45b5fa17b844f358d)), closes [#6](https://github.com/tonyputi/resume/issues/6)
+
 # [1.5.0](https://github.com/tonyputi/resume/compare/v1.4.1...v1.5.0) (2026-10-30)
 
 
