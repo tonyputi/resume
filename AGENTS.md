@@ -32,6 +32,7 @@ npm audit
 - `node --test` alone expects already-generated `index.html` and `resume.pdf`.
 - Run `actionlint` for workflow changes when available; it is not an npm dependency.
 - Omit `work[].endDate` for current roles; `render.mjs` supplies the theme's empty-string “Present” marker only in its rendering copy, never before validation. Inspect HTML/PDF visually for theme or print changes.
+- Metadata comes from `resume.json` via `metadata.mjs`; keep canonical/social URLs on the production domain and do not invent dates, handles or a person photo. Escape HTML values and JSON-LD script delimiters. Keep the favicon SVG and its PNG exports in `assets/` synchronized; the social preview is supplied as a PNG.
 - Do not edit/commit generated `index.html`, PDFs, `_site/`, `node_modules/` or old local `resume-*.html` snapshots.
 - After dependency changes, update `package-lock.json`, verify a clean `npm ci` and check audit findings. Document upstream/bundled vulnerabilities rather than forcing incompatible overrides.
 
@@ -50,7 +51,7 @@ npm audit
 - GitHub Actions still provides PR checks, automated releases and a separate GitHub Pages copy when not skipped. That copy is not the production domain and may be stale; do not report it as a successful Cloudflare deployment.
 - Build and check before publishing; pass those same artifacts to release/deploy jobs.
 - Let `@semantic-release/github` attach `resume.pdf` only when it creates a release. Never infer a new release from the latest existing Git tag or overwrite old release assets on non-release pushes.
-- GitHub Pages must receive only the staged public site, never the repository root (which includes local config, source and dependencies).
+- GitHub Pages must receive only `index.html` and `assets/` in the staged public site, never the repository root (which includes local config, source and dependencies).
 - Keep permissions scoped to jobs. Cache npm downloads, not `node_modules`; always install from the lockfile.
 - The PDF download URL points to the latest GitHub release, not a local PDF. Keep that URL, release asset name and smoke test aligned.
 - `generate-pdf.mjs` deliberately lets sections span pages while keeping theme item blocks intact. Preserve its print margins and hidden download button.

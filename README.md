@@ -35,7 +35,9 @@ Run commands from the repository root. Puppeteer downloads Chromium during insta
 | `resume.json` | Source of truth for CV content; employer names use `work[].name` |
 | `Makefile` | Build, PDF, checks and guarded local release commands |
 | `validate.mjs` | Validate original JSON Resume data; report field errors and exit nonzero on failure |
-| `render.mjs` | Render HTML using `jsonresume-theme-data-driven` |
+| `render.mjs` | Render HTML using `jsonresume-theme-data-driven` and add page metadata |
+| `metadata.mjs` | Derive canonical, search/social metadata and ProfilePage/Person JSON-LD from CV data |
+| `assets/` | Tracked favicon, Apple touch icon and social-preview artwork |
 | `inject-pdf-link.mjs` | Add the download action, hidden when printing |
 | `generate-pdf.mjs` | Print A4 PDF with margins and section-break overrides |
 | `test/smoke.test.mjs` | Check content rendering, download action and PDF integrity |
@@ -44,6 +46,14 @@ Run commands from the repository root. Puppeteer downloads Chromium during insta
 | `AGENTS.md` | Guidance for Pi and other coding agents |
 
 Edit `resume.json`, then run `make check` and inspect `index.html` and `resume.pdf`. Omit `work[].endDate` for current roles; only the rendering copy supplies the empty string needed by the theme to display “Present”. Do not hand-edit generated HTML/PDF files; they are ignored by Git. Schema validation and smoke tests do not replace a visual review.
+
+## Search and sharing metadata
+
+The build derives page/social titles from `basics.name` and `basics.label`, descriptions from the first sentence of `basics.summary`, and the canonical URL from `basics.url` (HTTPS required). Open Graph and X/Twitter cards use a local 1200×630 PNG. JSON-LD describes a `ProfilePage` whose main entity is a `Person`, reusing existing profile URLs without inventing photos, social handles or modification dates.
+
+Keep `basics.url` on the production domain: canonical, structured-data IDs and social-image URLs must not change to a preview/secondary-host URL. Favicons use relative paths so the site also works under the GitHub Pages subdirectory. Both hosts must publish `assets/` alongside `index.html`; do not publish the whole repository as the GitHub Pages artifact.
+
+The supplied favicon SVG, 48×48 PNG and 180×180 Apple touch icon are tracked; keep them consistent if the icon changes. The 1200×630 social preview is supplied as a PNG. These images are not used as a person photograph in structured data. Search engines and social platforms may cache or choose different snippets/previews; validate live URLs again after deployment.
 
 ## Website deployment and PDF releases
 

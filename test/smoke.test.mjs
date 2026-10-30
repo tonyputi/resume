@@ -40,6 +40,44 @@ test('generated HTML includes the CV and hides the download button in print', { 
         assert.ok(text.includes(keyword), `Missing skill: ${keyword}`)
       }
     }
+    const head = await page.evaluate(() => ({
+      title: document.title,
+      titleCount: document.head.querySelectorAll('title').length,
+      canonical: document.querySelector('link[rel="canonical"]')?.href,
+      meta: Object.fromEntries([...document.head.querySelectorAll('meta[name], meta[property]')]
+        .map(element => [element.name || element.getAttribute('property'), element.content])),
+      icons: [...document.head.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]')]
+        .map(element => element.getAttribute('href')),
+      profile: JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent),
+    }))
+    const canonical = new URL(resume.basics.url).href
+    const title = `${resume.basics.name} — ${resume.basics.label}`
+    const [intro] = new Intl.Segmenter('en', { granularity: 'sentence' }).segment(resume.basics.summary)
+    const description = intro.segment.trim()
+    const image = new URL('assets/social-preview.png', canonical).href
+    const imageAlt = `${resume.basics.name} — Simpler systems. Stronger teams. Engineering leadership, AI architecture.`
+    assert.equal(head.titleCount, 1)
+    assert.equal(head.title, title)
+    assert.equal(head.canonical, canonical)
+    for (const [key, value] of Object.entries({
+      description, author: resume.basics.name,
+      'og:type': 'profile', 'og:title': title, 'og:description': description,
+      'og:url': canonical, 'og:site_name': `${resume.basics.name} — CV`,
+      'og:image': image, 'og:image:type': 'image/png',
+      'og:image:width': '1200', 'og:image:height': '630', 'og:image:alt': imageAlt,
+      'twitter:card': 'summary_large_image', 'twitter:title': title,
+      'twitter:description': description, 'twitter:image': image, 'twitter:image:alt': imageAlt,
+    })) assert.equal(head.meta[key], value, `Incorrect metadata: ${key}`)
+    assert.deepEqual(head.icons, ['assets/favicon.png', 'assets/favicon.svg', 'assets/apple-touch-icon.png'])
+    assert.equal(head.profile['@context'], 'https://schema.org')
+    assert.equal(head.profile['@type'], 'ProfilePage')
+    assert.equal(head.profile.url, canonical)
+    assert.equal(head.profile.mainEntity['@type'], 'Person')
+    assert.equal(head.profile.mainEntity.name, resume.basics.name)
+    assert.equal(head.profile.mainEntity.jobTitle, resume.basics.label)
+    assert.equal(head.profile.mainEntity.description, resume.basics.summary)
+    assert.deepEqual(head.profile.mainEntity.sameAs, resume.basics.profiles.map(profile => profile.url))
+    assert.equal(head.profile.mainEntity.image, undefined, 'Do not invent a person photo')
     assert.equal(await page.$$eval('#download-pdf', els => els.length), 1)
     assert.equal(await page.$eval('#download-pdf', el => el.href),
       'https://github.com/tonyputi/resume/releases/latest/download/resume.pdf')
