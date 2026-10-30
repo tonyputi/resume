@@ -28,7 +28,7 @@
   "work": [
     {
       "name": "Grandstand (formerly Gambling.com Group)",
-      "position": "Technical Architect",
+      "position": "Technical Solutions Architect",
       "startDate": "2025-01",
       "location": "Malta",
       "highlights": [
@@ -42,8 +42,8 @@
     },
     {
       "name": "Gambling.com Group",
-      "position": "Development Leader",
-      "startDate": "2022-05",
+      "position": "Lead Developer",
+      "startDate": "2022-07",
       "endDate": "2025-01",
       "location": "Malta",
       "highlights": [
@@ -54,21 +54,27 @@
       ]
     },
     {
+      "name": "Gambling.com Group",
+      "position": "Senior Software Developer",
+      "startDate": "2021-11",
+      "endDate": "2022-08",
+      "location": "Malta"
+    },
+    {
       "name": "Videoslots",
-      "position": "Senior Full Stack Developer",
-      "startDate": "2021-01",
-      "endDate": "2022-05",
+      "position": "Senior Backend Developer",
+      "startDate": "2020-10",
+      "endDate": "2021-11",
       "location": "Malta",
       "highlights": [
-        "Contributed to the integration of the Italian ADM protocol, helping resolve an implementation that had stalled. Managed the technical work during the certification session, supporting its successful completion.",
-        "Optimised a high-volume transactional PHP/Laravel backend handling real-time gaming traffic, with a focus on data integrity, reliability, and security."
+        "Contributed to the integration of the Italian ADM protocol, helping resolve an implementation that had stalled. Managed the technical work during the certification session, supporting its successful completion."
       ]
     },
     {
       "name": "The Ear Limited",
       "position": "Head of Development",
-      "startDate": "2017-03",
-      "endDate": "2020-05",
+      "startDate": "2019-03",
+      "endDate": "2020-10",
       "location": "Malta",
       "summary": "iGaming Startup",
       "highlights": [
@@ -79,24 +85,44 @@
       ]
     },
     {
-      "name": "Nomad NT",
-      "position": "Founder & CEO",
-      "startDate": "2011-01",
-      "endDate": "2017-12",
+      "name": "The Ear Limited",
+      "position": "Senior PHP Programmer",
+      "startDate": "2018-01",
+      "endDate": "2020-10",
       "location": "Malta",
       "highlights": [
-        "Ran a technology company, with responsibility for client acquisition and technical delivery for government and private-sector clients.",
-        "Delivered web platforms, Linux infrastructure, network security systems, and embedded automation projects across commercial and maritime environments."
+        "Developed REST APIs and microservices with Lumen, alongside customer-facing websites built with Laravel. Managed and configured the supporting infrastructure, including servers, VPNs, DNS and firewalls."
       ]
     },
     {
-      "name": "Voismart SRL",
-      "position": "Tech Lead",
+      "name": "Nomad NT",
+      "position": "Company Owner",
+      "startDate": "2010-01",
+      "endDate": "2021-11",
+      "location": "Ragusa, Italy",
+      "highlights": [
+        "Delivered custom PHP and C++ applications and infrastructure solutions for public- and private-sector clients.",
+        "Supplied and configured servers, networks, security systems and building automation for public, private and superyacht projects."
+      ]
+    },
+    {
+      "name": "VoiSmart",
+      "position": "Senior PHP Programmer",
       "startDate": "2007-01",
-      "endDate": "2010-12",
+      "endDate": "2009-12",
       "location": "Milan, Italy",
       "highlights": [
-        "Led developers building the web UI for a VoIP/PBX product, combining team leadership with work across Asterisk, SIP, and networking."
+        "Developed the user interface for the company's VoIP/PBX product and subsequently led the PHP development team. Worked on the Fax over IP (FoIP) user interface and Orchestra."
+      ]
+    },
+    {
+      "name": "art-insite.org",
+      "position": "Company Owner",
+      "startDate": "2001-01",
+      "endDate": "2006-12",
+      "location": "Milan, Italy",
+      "highlights": [
+        "Developed PHP-based websites and web applications for public- and private-sector clients."
       ]
     }
   ],
@@ -120,21 +146,28 @@
   ],
   "certificates": [
     {
-      "name": "Certified Scrum Master (CSM)",
-      "date": "2021",
-      "issuer": "Scrum Alliance"
+      "name": "Certified ScrumMaster (CSM)",
+      "date": "2021-08-20",
+      "issuer": "Scrum Alliance",
+      "url": "https://bcert.me/sjldzfezc"
     },
     {
-      "name": "Engineering Leadership Suite",
-      "date": "2023",
-      "issuer": "LinkedIn Learning"
-    }
-  ],
-  "projects": [
+      "name": "Coaching Skills for Leaders and Managers",
+      "date": "2023-08",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/c1be0341cb3c41f4637b054c3e62e74c42dda8ba14e381f2c1a67c7a891b1517/"
+    },
     {
-      "name": "AI-Enhanced iGaming Aggregator",
-      "description": "Designed and built a casino aggregator using a microservices architecture, with a back-office platform enriched by AI capabilities. Integrated a custom MCP server to connect the aggregator's data layer to LLMs, enabling natural-language querying of GGR reports, automated risk workflows, and AI-assisted business intelligence without manual SQL overhead.",
-      "keywords": ["MCP Server", "LLMs", "Agentic AI", "Natural Language Querying", "RAG", "PHP/Laravel", "Redis", "MySQL", "PostgreSQL"]
+      "name": "Managing High Performers",
+      "date": "2023-08",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/76f6312c0316d7316533e03caaccd12740d12e3a42d52ad42925bbc2c8ed963d/"
+    },
+    {
+      "name": "Managing Organizational Change for Managers",
+      "date": "2023-08",
+      "issuer": "LinkedIn Learning",
+      "url": "https://www.linkedin.com/learning/certificates/dc4b54044be83ad038ef054cc44f2c4c10a6bb81e2b0a66c6d114336d876e447/"
     }
   ],
   "skills": [
