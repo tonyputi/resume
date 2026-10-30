@@ -33,8 +33,9 @@
       "location": "Malta",
       "highlights": [
         "AI Strategy & Adoption: Selected to contribute to a cross-functional leadership initiative shaping how agentic AI is introduced across software engineering, translating research into practical standards, tooling, and adoption patterns.",
-        "Enterprise AI Platform: Conceived an internal AI memory platform and led its initial technical development, turning the concept into a working product. Coordinated its continued development and rollout across development, delivery planning, infrastructure, testing and onboarding.",
+        "Enterprise AI Platform: Conceived Memento, an AI memory platform, and led its initial technical development, coordinating its continued rollout across development, infrastructure, testing and onboarding.",
         "Engineering Enablement: Helped engineering teams adopt AI through practical guidance, reusable MCP integrations, shared development patterns and technical knowledge sharing.",
+        "Designed and built reusable MCP tooling and integrations, simplifying authentication and enabling developers to connect AI capabilities with existing tools and systems.",
         "Contributed to cloud cost optimisation through FinOps analysis and workload improvements.",
         "Delivery Acceleration: Improved environment provisioning by architecting automated cloud deployment pipelines using AWS Fargate/ECS.",
         "Contributed to architectural standards, Infrastructure as Code adoption with Terraform, and CI/CD practices across engineering teams."
@@ -168,6 +169,25 @@
       "date": "2023-08",
       "issuer": "LinkedIn Learning",
       "url": "https://www.linkedin.com/learning/certificates/dc4b54044be83ad038ef054cc44f2c4c10a6bb81e2b0a66c6d114336d876e447/"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Memento — AI Memory & Context Platform (Grandstand)",
+      "description": "Employer project at Grandstand. An AI memory and context platform that makes organisational knowledge more accessible across teams. Conceived the project, led its initial technical development and coordinated its rollout.",
+      "keywords": ["AI Agents", "Persistent Memory", "MCP", "RAG", "Semantic Search", "AI Governance"]
+    },
+    {
+      "name": "pi-github-app-auth",
+      "description": "Personal open-source project. Pi coding-agent extension that authenticates commands executed by the agent to GitHub as a GitHub App installation, keeping personal credentials untouched through short-lived, least-privilege tokens.",
+      "keywords": ["TypeScript", "GitHub App", "Octokit", "Agent Tooling"],
+      "url": "https://github.com/tonyputi/pi-github-app-auth"
+    },
+    {
+      "name": "pi-lightpanda",
+      "description": "Personal open-source project. Pi coding-agent extension that gives agents a lightweight headless browser via Lightpanda for fetching, scraping and web automation, without a full Chromium instance.",
+      "keywords": ["TypeScript", "Lightpanda", "CDP", "Web Automation"],
+      "url": "https://github.com/tonyputi/pi-lightpanda"
     }
   ],
   "skills": [

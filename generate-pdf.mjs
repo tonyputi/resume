@@ -19,6 +19,9 @@ await page.addStyleTag({
     section {
       break-inside: auto !important;
     }
+    section > h2 {
+      break-after: avoid;
+    }
     section > div:has(> strong + div > span) {
       break-inside: avoid;
     }
