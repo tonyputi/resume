@@ -112,7 +112,9 @@ test('generated HTML includes the CV and hides the download button in print', { 
     const pdfScript = await readFile('generate-pdf.mjs', 'utf8')
     const printStyles = pdfScript.match(/content: `([\s\S]*?)`/)?.[1]
     assert.ok(printStyles, 'Missing PDF print styles')
+    assert.ok(printStyles.includes('section > h2'), 'Missing section-heading print rule')
     await page.addStyleTag({ content: printStyles })
+    assert.equal(await page.$$eval('section > h2', els => els.every(el => getComputedStyle(el).breakAfter === 'avoid')), true)
     for (const skill of resume.skills ?? []) {
       const group = await page.evaluate(name => {
         const heading = [...document.querySelectorAll('section > div > strong')]
