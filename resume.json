@@ -174,7 +174,7 @@
   "projects": [
     {
       "name": "Memento — AI Memory & Context Platform (Grandstand)",
-      "description": "Employer project at Grandstand. Conceived Memento and led its initial technical development, turning an organisational AI memory concept into a working product; coordinated its continued development and rollout across development, delivery planning, infrastructure, testing and onboarding. It helps make organisational knowledge and context more accessible and useful across teams.",
+      "description": "Employer project at Grandstand. An AI memory and context platform that makes organisational knowledge more accessible across teams. Conceived the project, led its initial technical development and coordinated its rollout.",
       "keywords": ["AI Agents", "Persistent Memory", "MCP", "RAG", "Semantic Search", "AI Governance"]
     },
     {
