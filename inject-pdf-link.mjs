@@ -24,15 +24,22 @@ const button = `
     transition: background 0.2s;
   }
   #download-pdf:hover { background: var(--resume-color-accent-dark, #0284c7); }
+  @media screen {
+    :root { --resume-color-accent: #0369a1; --resume-color-accent-dark: #075985; }
+  }
+  @media screen and (max-width: 480px) {
+    #download-pdf { top: 16px; right: 16px; padding: 0; width: 44px; height: 44px; justify-content: center; }
+    #download-pdf span { display: none; }
+  }
   @media print { #download-pdf { display: none; } }
 </style>
-<a id="download-pdf" href="${PDF_URL}" target="_blank">
+<a id="download-pdf" href="${PDF_URL}" target="_blank" aria-label="Download PDF">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
     <polyline points="7 10 12 15 17 10"/>
     <line x1="12" y1="15" x2="12" y2="3"/>
   </svg>
-  Download
+  <span>Download</span>
 </a>
 `
 
