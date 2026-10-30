@@ -1,3 +1,20 @@
+# [1.5.0](https://github.com/tonyputi/resume/compare/v1.4.1...v1.5.0) (2026-10-30)
+
+
+### Bug Fixes
+
+* align leadership CV with Grandstand rebrand ([19b45d0](https://github.com/tonyputi/resume/commit/19b45d0403f55bc2c676e8b6804a617241c99001)), closes [#2](https://github.com/tonyputi/resume/issues/2)
+* align work history and credentials with profile ([0641ba6](https://github.com/tonyputi/resume/commit/0641ba6a0439cdd43c8dbc65b3e178881e013f06)), closes [#2](https://github.com/tonyputi/resume/issues/2)
+* keep skill headings with their tags in PDF ([ad3406b](https://github.com/tonyputi/resume/commit/ad3406b717825d38a3195f6b665bede226d4f9e8)), closes [#2](https://github.com/tonyputi/resume/issues/2)
+* refine leadership and AI experience ([64c9071](https://github.com/tonyputi/resume/commit/64c907154e091e594498e3f6d936df66fea67215)), closes [#2](https://github.com/tonyputi/resume/issues/2)
+
+
+### Features
+
+* add resume metadata and sharing assets ([7917ac3](https://github.com/tonyputi/resume/commit/7917ac3b60c85f4677496e643739c1602114b6a7)), closes [#6](https://github.com/tonyputi/resume/issues/6)
+* reposition resume for engineering leadership ([da5d65e](https://github.com/tonyputi/resume/commit/da5d65edc9eb612b3de1abe5934fd387c8257a7d))
+* use supplied social preview and favicons ([b0b7ca9](https://github.com/tonyputi/resume/commit/b0b7ca927c293b348205936e53a9821b13360eb6)), closes [#6](https://github.com/tonyputi/resume/issues/6) [#18](https://github.com/tonyputi/resume/issues/18)
+
 ## [1.4.1](https://github.com/tonyputi/resume/compare/v1.4.0...v1.4.1) (2026-10-28)
 
 
