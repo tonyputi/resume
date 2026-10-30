@@ -23,7 +23,7 @@
         "url": "https://github.com/tonyputi"
       }
     ],
-    "summary": "Engineering and AI leader with experience across software architecture, platform development, and engineering delivery. Former Development Leader and Head of Development with experience building and managing teams, shaping technical direction, and aligning delivery with business goals. Work includes enterprise AI adoption, agentic systems, RAG, cloud architecture, and platform modernisation across iGaming and affiliate businesses."
+    "summary": "Technical Architect with experience as a Head of Development and Lead Developer, combining engineering leadership with hands-on expertise in AI architecture, systems integration and cloud platforms. My approach is to give teams clear technical direction, develop their judgement and distribute knowledge and responsibility so they can work autonomously. My technical experience includes AI agents, workflow automation, persistent memory, retrieval-augmented generation (RAG) and Model Context Protocol (MCP) integrations. I have worked across iGaming and affiliate businesses, with a focus on practical outcomes, reliable systems and sustainable operating costs."
   },
   "work": [
     {
@@ -33,8 +33,8 @@
       "location": "Malta",
       "highlights": [
         "AI Strategy & Adoption: Selected to contribute to a cross-functional leadership initiative shaping how agentic AI is introduced across software engineering, translating research into practical standards, tooling, and adoption patterns.",
-        "Enterprise AI Platform: Developed an internal AI knowledge and productivity platform, contributing to its vision, architecture, delivery, infrastructure, and onboarding.",
-        "Engineering Enablement: Drove AI adoption across engineering through internal talks, knowledge sharing, and hands-on enablement, helping teams adopt agentic workflows, MCP-based integrations, and governed AI tooling.",
+        "Enterprise AI Platform: Conceived an internal AI memory platform and led its initial technical development, turning the concept into a working product. Coordinated its continued development and rollout across development, delivery planning, infrastructure, testing and onboarding.",
+        "Engineering Enablement: Helped engineering teams adopt AI through practical guidance, reusable MCP integrations, shared development patterns and technical knowledge sharing.",
         "Contributed to cloud cost optimisation through FinOps analysis and workload improvements.",
         "Delivery Acceleration: Improved environment provisioning by architecting automated cloud deployment pipelines using AWS Fargate/ECS.",
         "Contributed to architectural standards, Infrastructure as Code adoption with Terraform, and CI/CD practices across engineering teams."
@@ -47,10 +47,10 @@
       "endDate": "2025-01",
       "location": "Malta",
       "highlights": [
-        "Built and managed a cross-functional team of developers and QA, supporting delivery and team development.",
-        "Owned quarterly OKRs and delivery roadmaps, aligning team priorities and technical execution with business goals.",
-        "Platform Modernisation: Led an upgrade of the company's core software, reducing codebase complexity while maintaining service continuity.",
-        "Drove cross-team technical initiatives and partnered with DevOps on performance tuning, infrastructure improvements, and delivery reliability."
+        "Led a development team spanning engineering and QA, combining people management and delivery responsibility with hands-on technical leadership.",
+        "Developed engineers through regular one-to-ones, individual development plans, actionable feedback and increasing ownership of technical decisions and delivery.",
+        "Aligned team priorities and delivery plans with product goals, balancing business commitments, technical quality and opportunities for engineers to grow.",
+        "Led a major platform upgrade while maintaining feature delivery, coordinating technical decisions, engineering practices and dependencies with other teams."
       ]
     },
     {
@@ -60,7 +60,7 @@
       "endDate": "2022-05",
       "location": "Malta",
       "highlights": [
-        "Helped resolve a technical impasse affecting ADM/AAMS certification through an audit and refactoring of compliance protocols.",
+        "Contributed to the integration of the Italian ADM protocol, helping resolve an implementation that had stalled. Managed the technical work during the certification session, supporting its successful completion.",
         "Optimised a high-volume transactional PHP/Laravel backend handling real-time gaming traffic, with a focus on data integrity, reliability, and security."
       ]
     },
@@ -72,8 +72,7 @@
       "location": "Malta",
       "summary": "iGaming Startup",
       "highlights": [
-        "Led an engineering function, supporting team development, delivery, and organisational structure while reporting to the CTO.",
-        "Helped define the technical roadmap and engineering practices while remaining hands-on with architecture and critical platform decisions.",
+        "Built and developed the engineering team of an iGaming startup, reporting to the CTO and helping shape the technical roadmap and team structure.",
         "Built a casino aggregation platform integrating third-party game providers, with a focus on performance and availability.",
         "Led the migration of a legacy platform to a modern architecture, reducing technical debt while maintaining service continuity.",
         "Led engineering work supporting multi-jurisdiction regulatory requirements across MGA, UKGC, Italy, and Colombia."
