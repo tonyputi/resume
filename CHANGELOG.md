@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/tonyputi/resume/compare/v1.6.0...v1.6.1) (2026-11-03)
+
+
+### Bug Fixes
+
+* clarify engineering leadership scope ([9cf4fae](https://github.com/tonyputi/resume/commit/9cf4fae9d1cd267438f6b3f94401568d72986c50))
+
 # [1.6.0](https://github.com/tonyputi/resume/compare/v1.5.1...v1.6.0) (2026-10-30)
 
 
