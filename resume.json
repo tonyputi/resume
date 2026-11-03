@@ -48,9 +48,10 @@
       "endDate": "2025-01",
       "location": "Malta",
       "highlights": [
-        "Led a development team spanning engineering and QA, combining people management and delivery responsibility with hands-on technical leadership.",
-        "Developed engineers through regular one-to-ones, individual development plans, actionable feedback and increasing ownership of technical decisions and delivery.",
-        "Aligned team priorities and delivery plans with product goals, balancing business commitments, technical quality and opportunities for engineers to grow.",
+        "Led a team of six direct reports across engineering and QA, with responsibility for one-to-ones, performance reviews and individual development plans.",
+        "Conducted technical interviews and contributed to hiring decisions.",
+        "Developed engineers through actionable feedback and increasing ownership of technical decisions and delivery, aligning team priorities with product goals.",
+        "Enabled the team to deploy independently to production through pairing, documentation and gradual delegation.",
         "Led a major platform upgrade while maintaining feature delivery, coordinating technical decisions, engineering practices and dependencies with other teams."
       ]
     },
@@ -79,8 +80,9 @@
       "location": "Malta",
       "summary": "iGaming Startup",
       "highlights": [
-        "Built and developed the engineering team of an iGaming startup, reporting to the CTO and helping shape the technical roadmap and team structure.",
-        "Built a casino aggregation platform integrating third-party game providers, with a focus on performance and availability.",
+        "Built and led a multidisciplinary team of ten across development, QA and design, with two team leads coordinating day-to-day work.",
+        "Ran one-to-ones and performance reviews, contributed to hiring decisions, helped shape the technical roadmap and translated CTO priorities into work for the teams.",
+        "Led delivery of a new back office and casino aggregation platform integrating third-party game providers, with a focus on performance and availability; both were released to production and used in practice.",
         "Led the migration of a legacy platform to a modern architecture, reducing technical debt while maintaining service continuity.",
         "Led engineering work supporting multi-jurisdiction regulatory requirements across MGA, UKGC, Italy, and Colombia."
       ]
@@ -113,7 +115,7 @@
       "endDate": "2009-12",
       "location": "Milan, Italy",
       "highlights": [
-        "Developed the user interface for the company's VoIP/PBX product and subsequently led the PHP development team. Worked on the Fax over IP (FoIP) user interface and Orchestra."
+        "Developed the user interface for the company's VoIP/PBX product and subsequently coordinated the technical work of two other PHP developers. Worked on the Fax over IP (FoIP) user interface and Orchestra."
       ]
     },
     {
