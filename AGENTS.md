@@ -47,7 +47,7 @@ npm audit
 
 - Website deployment and PDF release are separate. Creating a GitHub release does not deploy HTML to Cloudflare.
 - For a local release, use **`make release` only with explicit maintainer approval**. It requires a clean tree, `main` and HEAD matching freshly fetched `origin/main`, runs checks, then executes `npx --no-install semantic-release --no-ci`. It needs authenticated Git pushes and `GH_TOKEN` or `GITHUB_TOKEN`; never print or commit credentials. It publishes for real and does not install dependencies or deploy the website. Do not race it against an automated release.
-- To conserve Actions minutes without blocking Cloudflare, use a final `skip-checks: true` trailer on the pushed/merged source commit, preceded by two empty lines. Preserve them with `git commit --cleanup=verbatim`; for squash merges, ensure the final merge message preserves the trailer. Generic `[skip ci]` also suppresses Cloudflare. The changelog-only release commit may retain that flag. Always run local checks before skipping CI.
+- To conserve Actions minutes without blocking Cloudflare, use a final `skip-checks: true` trailer on the pushed/merged source commit, preceded by two empty lines. Preserve them with `git commit --cleanup=verbatim`; for squash merges, ensure the final merge message preserves the trailer. Generic `[skip ci]` also suppresses Cloudflare. Always run local checks before skipping CI.
 - GitHub Actions still provides PR checks, automated releases and a separate GitHub Pages copy when not skipped. That copy is not the production domain and may be stale; do not report it as a successful Cloudflare deployment.
 - Build and check before publishing; pass those same artifacts to release/deploy jobs.
 - Let `@semantic-release/github` attach `resume.pdf` only when it creates a release. Never infer a new release from the latest existing Git tag or overwrite old release assets on non-release pushes.
@@ -56,4 +56,4 @@ npm audit
 - The PDF download URL points to the latest GitHub release, not a local PDF. Keep that URL, release asset name and smoke test aligned.
 - `generate-pdf.mjs` deliberately lets sections span pages while keeping theme item blocks intact. Preserve its print margins and hidden download button.
 - Puppeteer runs without a sandbox for CI compatibility. Do not use it to render untrusted HTML or templates.
-- `CHANGELOG.md` belongs to release automation; package version metadata is not the release version.
+- `CHANGELOG.md` is historical; current changelog information is in GitHub Release notes. Package version metadata is not the release version.

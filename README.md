@@ -60,7 +60,7 @@ The supplied favicon SVG, 48×48 PNG and 180×180 Apple touch icon are tracked; 
 These are separate operations:
 
 - **Production website:** [Cloudflare Pages](https://resume-zrf.pages.dev/) automatically builds the `resume` project from pushes to `main` and serves `filippo.sallemi.it`. Pull requests receive preview deployments. This integration does not consume GitHub Actions minutes.
-- **PDF release:** `semantic-release` uses Conventional Commits (`fix:` for patches, `feat:` for minor releases), updates `CHANGELOG.md`, creates a GitHub release and attaches `resume.pdf` only to that new release. Non-release commits do not overwrite existing PDF assets.
+- **PDF release:** `semantic-release` uses Conventional Commits (`fix:` for patches, `feat:` for minor releases), creates a GitHub release with generated release notes and attaches `resume.pdf` only to that new release. Non-release commits do not overwrite existing PDF assets.
 - **GitHub Actions:** runs checks on PRs and, on `main`, can publish releases and a separate GitHub Pages copy. That copy is not the production domain and may lag when Actions is skipped or minutes are exhausted.
 
 ### Release locally without Actions minutes
@@ -73,7 +73,7 @@ make release
 
 **This publishes a real release**, not a preview. It requires a clean tree (including untracked files), the `main` branch, HEAD matching freshly fetched `origin/main`, authenticated Git pushes and a `GH_TOKEN` or `GITHUB_TOKEN` with repository/release write access. It runs `make check` before `semantic-release --no-ci`; build/test failure stops publication. It does not deploy the HTML website or publish to npm. Do not run it while an automated release is in progress.
 
-`CHANGELOG.md` belongs to release automation. The package is private; `package.json`'s version is not the release version. The website may be newer than the latest released PDF after a non-release push.
+`CHANGELOG.md` is historical; current changelog information is in GitHub Release notes. The package is private; `package.json`'s version is not the release version. The website may be newer than the latest released PDF after a non-release push.
 
 ### Skip only GitHub Actions, not Cloudflare
 
@@ -86,7 +86,7 @@ chore: describe the change
 skip-checks: true
 ```
 
-Do **not** use `[skip ci]` for a source update that Cloudflare must deploy: Cloudflare also honors it. The automated changelog-only release commit may keep `[skip ci]` because it does not change the site. Skipping Actions does not skip the need for local `make check`.
+Do **not** use `[skip ci]` for a source update that Cloudflare must deploy: Cloudflare also honors it. Skipping Actions does not skip the need for local `make check`.
 
 ## Infrastructure and work tracking
 
