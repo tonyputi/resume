@@ -90,7 +90,7 @@ Do **not** use `[skip ci]` for a source update that Cloudflare must deploy: Clou
 
 ## Dependabot automation
 
-After PR CI succeeds, Dependabot updates can enable native squash auto-merge. Human CODEOWNER review and the `Build and check` required check remain mandatory. The repository-scoped GitHub App needs Contents and Pull requests write, `GH_APP_ID` and `GH_APP_PRIVATE_KEY`, and no ruleset bypass. See the [shared workflow prerequisites](https://github.com/tonyputi/.github#dependabot-auto-merge).
+Dependabot monitors GitHub Actions and npm dependencies. After PR CI succeeds, Dependabot updates can enable native squash auto-merge. Human CODEOWNER review and the `Build and check` required check remain mandatory. The repository-scoped GitHub App needs Contents and Pull requests write, `GH_APP_ID` and `GH_APP_PRIVATE_KEY`, and no ruleset bypass. See the [shared workflow prerequisites](https://github.com/tonyputi/.github#dependabot-auto-merge).
 
 ## Infrastructure and work tracking
 
