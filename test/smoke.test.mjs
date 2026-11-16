@@ -27,7 +27,19 @@ test('generated HTML includes the CV and hides the download button in print', { 
     }
     for (const project of resume.projects ?? []) {
       assert.ok(text.includes(project.name), `Missing project: ${project.name}`)
-      assert.ok(text.includes(project.description), `Missing description: ${project.name}`)
+      const description = await page.evaluate(html => {
+        const element = document.createElement('div')
+        element.innerHTML = html
+        return element.textContent
+      }, project.description)
+      assert.ok(text.includes(description), `Missing description: ${project.name}`)
+    }
+    assert.ok(text.includes('Selected open-source contributions'), 'Missing selected contributions')
+    for (const [label, url] of [
+      ['Laravel AI', 'https://github.com/laravel/ai/pull/758'],
+      ['GreeClimate', 'https://github.com/cmroche/greeclimate/pull/136'],
+    ]) {
+      assert.equal(await page.$$eval('a', (anchors, label) => anchors.find(anchor => anchor.textContent === label)?.href, label), url)
     }
     for (const school of resume.education ?? []) {
       assert.ok(text.includes(school.institution), `Missing school: ${school.institution}`)
