@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "jsonresume-theme-data-driven": "^0.2.9"
+    "jsonresume-theme-data-driven": "^0.2.10"
   },
   "devDependencies": {
     "@jsonresume/schema": "1.7.1",
