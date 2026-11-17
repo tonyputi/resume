@@ -190,6 +190,10 @@
       "description": "Personal open-source project. Pi coding-agent extension that gives agents a lightweight headless browser via Lightpanda for fetching, scraping and web automation, without a full Chromium instance.",
       "keywords": ["TypeScript", "Lightpanda", "CDP", "Web Automation"],
       "url": "https://github.com/tonyputi/pi-lightpanda"
+    },
+    {
+      "name": "Selected open-source contributions",
+      "description": "Contributed fixes and integrations to <a href=\"https://github.com/laravel/ai/pull/758\">Laravel AI</a> and <a href=\"https://github.com/cmroche/greeclimate/pull/136\">GreeClimate</a>, improving conversation-history handling and device-command behaviour. Earlier work includes OpenWrt mesh-network integration and Arduino tooling."
     }
   ],
   "skills": [
