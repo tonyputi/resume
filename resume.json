@@ -33,10 +33,11 @@
       "location": "Malta",
       "highlights": [
         "AI Strategy & Adoption: Selected to contribute to a cross-functional leadership initiative shaping how agentic AI is introduced across software engineering, translating research into practical standards, tooling, and adoption patterns.",
-        "Enterprise AI Platform: Conceived Memento, an AI memory platform, and led its initial technical development, coordinating its continued rollout across development, infrastructure, testing and onboarding.",
+        "Enterprise AI Platform: Conceived Memento, an AI memory platform now used across a 600-person organisation, and led its initial technical development, coordinating its rollout across development, infrastructure, testing and onboarding.",
         "Engineering Enablement: Helped engineering teams adopt AI through practical guidance, reusable MCP integrations, shared development patterns and technical knowledge sharing.",
         "Designed and built reusable MCP tooling and integrations, simplifying authentication and enabling developers to connect AI capabilities with existing tools and systems.",
-        "Contributed to cloud cost optimisation through FinOps analysis and workload improvements.",
+        "Cloud Cost Programme: own an ongoing AWS cost optimisation programme that identified $73k+/year in savings — RDS Extended Support elimination, org-wide Compute Optimizer rollout, Savings Plans strategy with VP sponsorship.",
+        "Led the company-wide PHP 8.1→8.3 migration across the AWS Lambda fleet in response to active supply-chain CVEs, coordinating assessment, patching and rollout in one day.",
         "Delivery Acceleration: Improved environment provisioning by architecting automated cloud deployment pipelines using AWS Fargate/ECS.",
         "Contributed to architectural standards, Infrastructure as Code adoption with Terraform, and CI/CD practices across engineering teams."
       ]
@@ -104,8 +105,7 @@
       "endDate": "2021-11",
       "location": "Ragusa, Italy",
       "highlights": [
-        "Delivered custom PHP and C++ applications and infrastructure solutions for public- and private-sector clients.",
-        "Supplied and configured servers, networks, security systems and building automation for public, private and superyacht projects."
+        "Founded and ran my own technical services company for 11 years. Delivered multi-client projects for public- and private-sector organisations and superyacht projects: custom PHP/C++ applications, servers, networks, security systems and building automation. Full ownership from pre-sale to delivery and long-term support."
       ]
     },
     {
@@ -176,7 +176,7 @@
   "projects": [
     {
       "name": "Memento — AI Memory & Context Platform (Grandstand)",
-      "description": "Employer project at Grandstand. An AI memory and context platform that makes organisational knowledge more accessible across teams. Conceived the project, led its initial technical development and coordinated its rollout.",
+      "description": "Employer project at Grandstand. An AI memory and context platform used across a 600-person organisation. Conceived the project, led its initial technical development and coordinated its rollout.",
       "keywords": ["AI Agents", "Persistent Memory", "MCP", "RAG", "Semantic Search", "AI Governance"]
     },
     {
