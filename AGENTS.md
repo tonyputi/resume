@@ -9,6 +9,12 @@ This is Filippo Sallemi's personal CV, not an application framework. It uses Nod
 - Prefer small changes and existing/platform tooling. Do not fork the theme or add dependencies without a concrete need.
 - Communicate with the maintainer in Italian unless requested otherwise. Ask questions one at a time.
 
+## Alignment with social content
+
+- At the start of CV work, consult `tonyputi/socials` and its applicable `AGENTS.md` for relevant recent positioning, projects and verified figures. Review only the material needed for the task; if access is unavailable, report that the alignment check was not completed.
+- Treat social content as context, not as authority to change CV claims. Keep `resume.json` as the CV source of truth, distinguish drafts from approved/published content, and flag discrepancies or suggested updates for maintainer confirmation. Do not copy private drafts or confidential material into this public repository.
+- This cross-repository check is read-only. Do not edit the social repository, publish posts or synchronise content automatically without an explicit request.
+
 ## Work tracking
 
 - Start with `git status --short` and `gh issue list --state open`; preserve unrelated changes.
