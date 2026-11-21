@@ -16,6 +16,12 @@ await page.goto(`file://${resolve('index.html')}`, { waitUntil: 'networkidle0' }
 // they are never cut mid-entry.
 await page.addStyleTag({
   content: `
+    /* Compact print spacing without shrinking text or changing the web layout. */
+    @media print {
+      section, section > div {
+        margin-bottom: 12px !important;
+      }
+    }
     section {
       break-inside: auto !important;
     }

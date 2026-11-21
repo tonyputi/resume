@@ -39,7 +39,7 @@ Run commands from the repository root. Puppeteer downloads Chromium during insta
 | `metadata.mjs` | Derive canonical, search/social metadata and ProfilePage/Person JSON-LD from CV data |
 | `assets/` | Tracked favicon, Apple touch icon and social-preview artwork |
 | `inject-pdf-link.mjs` | Add the download action, hidden when printing |
-| `generate-pdf.mjs` | Print A4 PDF with margins and section-break overrides |
+| `generate-pdf.mjs` | Print A4 PDF with margins, compact print-only spacing and section-break overrides |
 | `test/smoke.test.mjs` | Check content rendering, download action and PDF integrity |
 | `release.config.cjs` | Conventional Commit release rules and PDF release asset |
 | `.github/workflows/deploy.yml` | PR checks and main-branch release/deployment |

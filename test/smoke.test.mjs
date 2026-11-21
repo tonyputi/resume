@@ -118,6 +118,8 @@ test('generated HTML includes the CV and hides the download button in print', { 
     await page.setViewport({ width: 1280, height: 900 })
     assert.notEqual(await page.$eval('#download-pdf span', el => getComputedStyle(el).display), 'none')
     assert.equal(await page.$eval('header a', el => getComputedStyle(el).color), 'rgb(3, 105, 161)')
+    const screenSpacing = await page.$$eval('section, section > div', elements =>
+      elements.map(element => getComputedStyle(element).marginBottom))
     await page.emulateMediaType('print')
     assert.equal(await page.$eval('header a', el => getComputedStyle(el).color), 'rgb(14, 165, 233)')
     assert.equal(await page.$eval('#download-pdf', el => getComputedStyle(el).display), 'none')
@@ -125,7 +127,23 @@ test('generated HTML includes the CV and hides the download button in print', { 
     const printStyles = pdfScript.match(/content: `([\s\S]*?)`/)?.[1]
     assert.ok(printStyles, 'Missing PDF print styles')
     assert.ok(printStyles.includes('section > h2'), 'Missing section-heading print rule')
+    const printTypography = await page.$$eval('main *', elements => elements.map(element => {
+      const style = getComputedStyle(element)
+      return [style.fontSize, style.lineHeight]
+    }))
     await page.addStyleTag({ content: printStyles })
+    assert.equal(await page.$$eval('section, section > div', elements =>
+      elements.every(element => getComputedStyle(element).marginBottom === '12px')), true,
+    'PDF sections and entries must use compact spacing')
+    assert.deepEqual(await page.$$eval('main *', elements => elements.map(element => {
+      const style = getComputedStyle(element)
+      return [style.fontSize, style.lineHeight]
+    })), printTypography, 'PDF spacing must not shrink typography')
+    assert.equal(await page.$$eval('section', elements =>
+      elements.every(element => getComputedStyle(element).breakInside === 'auto')), true)
+    assert.equal(await page.$$eval('section > div:has(> div > div)', elements =>
+      elements.every(element => getComputedStyle(element).breakInside === 'avoid')), true,
+    'Keep experience, education, project and certificate entries intact')
     assert.equal(await page.$$eval('section > h2', els => els.every(el => getComputedStyle(el).breakAfter === 'avoid')), true)
     for (const skill of resume.skills ?? []) {
       const group = await page.evaluate(name => {
@@ -138,6 +156,10 @@ test('generated HTML includes the CV and hides the download button in print', { 
       }, skill.name)
       assert.deepEqual(group, { breakInside: 'avoid', hasTags: true }, `Unprotected skill group: ${skill.name}`)
     }
+    await page.emulateMediaType('screen')
+    assert.deepEqual(await page.$$eval('section, section > div', elements =>
+      elements.map(element => getComputedStyle(element).marginBottom)), screenSpacing,
+    'PDF spacing must not change the screen layout')
   } finally {
     await browser.close()
   }
